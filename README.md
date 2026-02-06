@@ -38,15 +38,16 @@ length). At last, we chose to shuffle on a single base in length of 20. For robu
 rep and a 5 bases shift backward in 3th rep. This would in theory capture the signal of motifs on edges. Compared with the original prediction, the Jensen-Shannon
 Divergence (JSD) of the distributions and the changes in individual probabilities were calculated, the max, mean and std were recorded to create the saliency map.
 The saliency score was calculated as 0.7 max + 0.3 mean, and the confidance was described as the max over std.
-    4. Transcripts were binned into different clusters and buckets, based the original prediction. The same transcript could have been found in all the clusters
+4. Transcripts were binned into different clusters and buckets, based the original prediction. The same transcript could have been found in all the clusters
 and either in positive or negative buckets (if without selecting). During binning, saliency map for each cluster was extracted for each transcript, the peaks that
-pass both the absolute and relative thresholds were cropped with a span of 50 bases and stayed in the buckets. Chosen regions were masked so that we could iteratively find the next peak.
-    6. The motifs found to decrease the likelihood of a certain cluster to be predicted were marked as promoters, increase as suppressors. At least 94.9%/99.7% of
+pass both the absolute and relative thresholds were cropped with a span of 50 bases and stayed in the buckets. Chosen regions were masked so that we could
+iteratively find the next peak.
+5. The motifs found to decrease the likelihood of a certain cluster to be predicted were marked as promoters, increase as suppressors. At least 94.9%/99.7% of
 promotors/suppressors were found in the positive/negative buckets, which was biologically intuitive.
-    8. Self-alignment was done within each cluster and bucket. Though the same motif could appear multiple times on the same transcript, we assume each sequence
+6. Self-alignment was done within each cluster and bucket. Though the same motif could appear multiple times on the same transcript, we assume each sequence
 cropped would only have at most one of each motif. Due to the inherently greedy bias of the algorithm, we ran the program twice, where we specified shorter motifs
 as in a range of 4-10, and longer as in 10-30. 
-    10. Buckets were compared agianst three databases in search of RBP, miR and other types of RNA. All species were included given evolutionary conservation. We
+7. Buckets were compared agianst three databases in search of RBP, miR and other types of RNA. All species were included given evolutionary conservation. We
 discarded the motifs that are too common, or that have too low abundance. We also filtered out the matches that run in the reverse direction, or that could not
 pass at least two of three thresholds, where p-value was 5e-4, q-value was 0.1 and E-value was 0.05.
      
