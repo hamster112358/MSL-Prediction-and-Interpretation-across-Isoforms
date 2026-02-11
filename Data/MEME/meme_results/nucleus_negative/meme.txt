@@ -1,0 +1,2350 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 4.11.2 (Release date: Thu May 05 14:58:55 2016 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+DATAFILE= meme_input_split/nucleus_negative_motifs.fasta
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ENSMUST00000207394.2_ran 1.0000     50  ENSMUST00000152623.2_ran 1.0000     50  
+ENSMUST00000152623.2_ran 1.0000     50  ENSMUST00000152623.2_ran 1.0000     50  
+ENSMUST00000152623.2_ran 1.0000     50  ENSMUST00000152623.2_ran 1.0000     50  
+ENSMUST00000128262.2_ran 1.0000     50  ENSMUST00000128262.2_ran 1.0000     50  
+ENSMUST00000128262.2_ran 1.0000     50  ENSMUST00000128262.2_ran 1.0000     50  
+ENSMUST00000128262.2_ran 1.0000     50  ENSMUST00000245018.1_ran 1.0000     50  
+ENSMUST00000238570.2_ran 1.0000     50  ENSMUST00000238570.2_ran 1.0000     50  
+ENSMUST00000238570.2_ran 1.0000     50  ENSMUST00000238570.2_ran 1.0000     50  
+ENSMUST00000238570.2_ran 1.0000     50  ENSMUST00000124805.2_ran 1.0000     50  
+ENSMUST00000176463.2_ran 1.0000     50  ENSMUST00000176463.2_ran 1.0000     50  
+ENSMUST00000176463.2_ran 1.0000     50  ENSMUST00000238496.2_ran 1.0000     50  
+ENSMUST00000026917.10_ra 1.0000     50  ENSMUST00000026917.10_ra 1.0000     50  
+ENSMUST00000026917.10_ra 1.0000     50  ENSMUST00000026917.10_ra 1.0000     50  
+ENSMUST00000026917.10_ra 1.0000     50  ENSMUST00000189818.2_ran 1.0000     50  
+ENSMUST00000205439.2_ran 1.0000     50  ENSMUST00000205439.2_ran 1.0000     50  
+ENSMUST00000205439.2_ran 1.0000     50  ENSMUST00000205439.2_ran 1.0000     50  
+ENSMUST00000205439.2_ran 1.0000     50  ENSMUST00000148248.3_ran 1.0000     50  
+ENSMUST00000148248.3_ran 1.0000     50  ENSMUST00000148248.3_ran 1.0000     50  
+ENSMUST00000148248.3_ran 1.0000     50  ENSMUST00000199717.2_ran 1.0000     50  
+ENSMUST00000172781.8_ran 1.0000     50  ENSMUST00000172781.8_ran 1.0000     50  
+ENSMUST00000172781.8_ran 1.0000     50  ENSMUST00000172781.8_ran 1.0000     50  
+ENSMUST00000172781.8_ran 1.0000     50  ENSMUST00000176297.2_ran 1.0000     50  
+ENSMUST00000123631.2_ran 1.0000     50  ENSMUST00000207769.2_ran 1.0000     50  
+ENSMUST00000207769.2_ran 1.0000     50  ENSMUST00000207769.2_ran 1.0000     50  
+ENSMUST00000207769.2_ran 1.0000     50  ENSMUST00000207769.2_ran 1.0000     50  
+ENSMUST00000127154.2_ran 1.0000     50  ENSMUST00000136249.2_ran 1.0000     50  
+ENSMUST00000136249.2_ran 1.0000     50  ENSMUST00000136249.2_ran 1.0000     50  
+ENSMUST00000136249.2_ran 1.0000     50  ENSMUST00000111228.2_ran 1.0000     50  
+ENSMUST00000111228.2_ran 1.0000     50  ENSMUST00000111228.2_ran 1.0000     50  
+ENSMUST00000111228.2_ran 1.0000     50  ENSMUST00000111228.2_ran 1.0000     50  
+ENSMUST00000246193.2_ran 1.0000     50  ENSMUST00000246193.2_ran 1.0000     50  
+ENSMUST00000246193.2_ran 1.0000     50  ENSMUST00000246193.2_ran 1.0000     50  
+ENSMUST00000246193.2_ran 1.0000     50  ENSMUST00000228164.2_ran 1.0000     50  
+ENSMUST00000228164.2_ran 1.0000     50  ENSMUST00000228164.2_ran 1.0000     50  
+ENSMUST00000228164.2_ran 1.0000     50  ENSMUST00000295654.1_ran 1.0000     50  
+ENSMUST00000151832.2_ran 1.0000     50  ENSMUST00000220126.2_ran 1.0000     50  
+ENSMUST00000177103.8_ran 1.0000     50  ENSMUST00000172208.2_ran 1.0000     50  
+ENSMUST00000146371.8_ran 1.0000     50  ENSMUST00000146371.8_ran 1.0000     50  
+ENSMUST00000146371.8_ran 1.0000     50  ENSMUST00000146371.8_ran 1.0000     50  
+ENSMUST00000146371.8_ran 1.0000     50  ENSMUST00000198128.2_ran 1.0000     50  
+ENSMUST00000198128.2_ran 1.0000     50  ENSMUST00000229896.2_ran 1.0000     50  
+ENSMUST00000229896.2_ran 1.0000     50  ENSMUST00000229896.2_ran 1.0000     50  
+ENSMUST00000229896.2_ran 1.0000     50  ENSMUST00000229896.2_ran 1.0000     50  
+ENSMUST00000207271.2_ran 1.0000     50  ENSMUST00000209916.2_ran 1.0000     50  
+ENSMUST00000174434.8_ran 1.0000     50  ENSMUST00000174434.8_ran 1.0000     50  
+ENSMUST00000174434.8_ran 1.0000     50  ENSMUST00000174434.8_ran 1.0000     50  
+ENSMUST00000174434.8_ran 1.0000     50  ENSMUST00000226122.2_ran 1.0000     50  
+ENSMUST00000226122.2_ran 1.0000     50  ENSMUST00000226122.2_ran 1.0000     50  
+ENSMUST00000226122.2_ran 1.0000     50  ENSMUST00000226122.2_ran 1.0000     50  
+ENSMUST00000190943.2_ran 1.0000     50  ENSMUST00000198506.2_ran 1.0000     50  
+ENSMUST00000211812.2_ran 1.0000     50  ENSMUST00000132502.2_ran 1.0000     50  
+ENSMUST00000132502.2_ran 1.0000     50  ENSMUST00000132502.2_ran 1.0000     50  
+ENSMUST00000245442.1_ran 1.0000     50  ENSMUST00000245442.1_ran 1.0000     50  
+ENSMUST00000245442.1_ran 1.0000     50  ENSMUST00000124006.2_ran 1.0000     50  
+ENSMUST00000124006.2_ran 1.0000     50  ENSMUST00000150592.2_ran 1.0000     50  
+ENSMUST00000225300.2_ran 1.0000     50  ENSMUST00000225300.2_ran 1.0000     50  
+ENSMUST00000225300.2_ran 1.0000     50  ENSMUST00000225300.2_ran 1.0000     50  
+ENSMUST00000225300.2_ran 1.0000     50  ENSMUST00000169644.2_ran 1.0000     50  
+ENSMUST00000169644.2_ran 1.0000     50  ENSMUST00000169644.2_ran 1.0000     50  
+ENSMUST00000188008.7_ran 1.0000     50  ENSMUST00000188008.7_ran 1.0000     50  
+ENSMUST00000188008.7_ran 1.0000     50  ENSMUST00000154834.2_ran 1.0000     50  
+ENSMUST00000154834.2_ran 1.0000     50  ENSMUST00000154834.2_ran 1.0000     50  
+ENSMUST00000154834.2_ran 1.0000     50  ENSMUST00000154834.2_ran 1.0000     50  
+ENSMUST00000125036.8_ran 1.0000     50  ENSMUST00000156313.8_ran 1.0000     50  
+ENSMUST00000224549.2_ran 1.0000     50  ENSMUST00000224549.2_ran 1.0000     50  
+ENSMUST00000177281.8_ran 1.0000     50  ENSMUST00000177281.8_ran 1.0000     50  
+ENSMUST00000177281.8_ran 1.0000     50  ENSMUST00000211874.2_ran 1.0000     50  
+ENSMUST00000211874.2_ran 1.0000     50  ENSMUST00000146847.2_ran 1.0000     50  
+ENSMUST00000146847.2_ran 1.0000     50  ENSMUST00000146847.2_ran 1.0000     50  
+ENSMUST00000146847.2_ran 1.0000     50  ENSMUST00000146847.2_ran 1.0000     50  
+ENSMUST00000226366.2_ran 1.0000     50  ENSMUST00000226366.2_ran 1.0000     50  
+ENSMUST00000134153.2_ran 1.0000     50  ENSMUST00000134153.2_ran 1.0000     50  
+ENSMUST00000140562.2_ran 1.0000     50  ENSMUST00000145226.9_ran 1.0000     50  
+ENSMUST00000229939.2_ran 1.0000     50  ENSMUST00000229939.2_ran 1.0000     50  
+ENSMUST00000229939.2_ran 1.0000     50  ENSMUST00000229939.2_ran 1.0000     50  
+ENSMUST00000229939.2_ran 1.0000     50  ENSMUST00000125789.2_ran 1.0000     50  
+ENSMUST00000125789.2_ran 1.0000     50  ENSMUST00000173997.2_ran 1.0000     50  
+ENSMUST00000155437.2_ran 1.0000     50  ENSMUST00000141370.8_ran 1.0000     50  
+ENSMUST00000141370.8_ran 1.0000     50  ENSMUST00000208095.2_ran 1.0000     50  
+ENSMUST00000208095.2_ran 1.0000     50  ENSMUST00000190131.2_ran 1.0000     50  
+ENSMUST00000190131.2_ran 1.0000     50  ENSMUST00000190131.2_ran 1.0000     50  
+ENSMUST00000190131.2_ran 1.0000     50  ENSMUST00000190131.2_ran 1.0000     50  
+ENSMUST00000216073.2_ran 1.0000     50  ENSMUST00000216073.2_ran 1.0000     50  
+ENSMUST00000162282.2_ran 1.0000     50  ENSMUST00000209390.2_ran 1.0000     50  
+ENSMUST00000309423.1_ran 1.0000     50  ENSMUST00000212595.2_ran 1.0000     50  
+ENSMUST00000212595.2_ran 1.0000     50  ENSMUST00000212595.2_ran 1.0000     50  
+ENSMUST00000212595.2_ran 1.0000     50  ENSMUST00000212595.2_ran 1.0000     50  
+ENSMUST00000137435.2_ran 1.0000     50  ENSMUST00000137435.2_ran 1.0000     50  
+ENSMUST00000137435.2_ran 1.0000     50  ENSMUST00000137435.2_ran 1.0000     50  
+ENSMUST00000137435.2_ran 1.0000     50  ENSMUST00000143506.8_ran 1.0000     50  
+ENSMUST00000143506.8_ran 1.0000     50  ENSMUST00000143506.8_ran 1.0000     50  
+ENSMUST00000143506.8_ran 1.0000     50  ENSMUST00000143506.8_ran 1.0000     50  
+ENSMUST00000206095.2_ran 1.0000     50  ENSMUST00000206095.2_ran 1.0000     50  
+ENSMUST00000206095.2_ran 1.0000     50  ENSMUST00000206095.2_ran 1.0000     50  
+ENSMUST00000206095.2_ran 1.0000     50  ENSMUST00000198984.5_ran 1.0000     50  
+ENSMUST00000198984.5_ran 1.0000     50  ENSMUST00000140838.2_ran 1.0000     50  
+ENSMUST00000149628.2_ran 1.0000     50  ENSMUST00000217121.2_ran 1.0000     50  
+ENSMUST00000217121.2_ran 1.0000     50  ENSMUST00000217121.2_ran 1.0000     50  
+ENSMUST00000217121.2_ran 1.0000     50  ENSMUST00000217121.2_ran 1.0000     50  
+ENSMUST00000120539.8_ran 1.0000     50  ENSMUST00000120539.8_ran 1.0000     50  
+ENSMUST00000120539.8_ran 1.0000     50  ENSMUST00000120539.8_ran 1.0000     50  
+ENSMUST00000120539.8_ran 1.0000     50  ENSMUST00000341511.1_ran 1.0000     50  
+ENSMUST00000135216.3_ran 1.0000     50  ENSMUST00000135216.3_ran 1.0000     50  
+ENSMUST00000149780.2_ran 1.0000     50  ENSMUST00000149780.2_ran 1.0000     50  
+ENSMUST00000149780.2_ran 1.0000     50  ENSMUST00000149780.2_ran 1.0000     50  
+ENSMUST00000149780.2_ran 1.0000     50  ENSMUST00000134919.2_ran 1.0000     50  
+ENSMUST00000140215.2_ran 1.0000     50  ENSMUST00000208888.2_ran 1.0000     50  
+ENSMUST00000208888.2_ran 1.0000     50  ENSMUST00000208888.2_ran 1.0000     50  
+ENSMUST00000208888.2_ran 1.0000     50  ENSMUST00000208888.2_ran 1.0000     50  
+ENSMUST00000040081.7_ran 1.0000     50  ENSMUST00000183817.2_ran 1.0000     50  
+ENSMUST00000183817.2_ran 1.0000     50  ENSMUST00000183817.2_ran 1.0000     50  
+ENSMUST00000183817.2_ran 1.0000     50  ENSMUST00000183817.2_ran 1.0000     50  
+ENSMUST00000198030.2_ran 1.0000     50  ENSMUST00000198030.2_ran 1.0000     50  
+ENSMUST00000198030.2_ran 1.0000     50  ENSMUST00000198030.2_ran 1.0000     50  
+ENSMUST00000198030.2_ran 1.0000     50  ENSMUST00000148536.2_ran 1.0000     50  
+ENSMUST00000148536.2_ran 1.0000     50  ENSMUST00000148536.2_ran 1.0000     50  
+ENSMUST00000148536.2_ran 1.0000     50  ENSMUST00000148536.2_ran 1.0000     50  
+ENSMUST00000155682.2_ran 1.0000     50  ENSMUST00000146268.8_ran 1.0000     50  
+ENSMUST00000146268.8_ran 1.0000     50  ENSMUST00000146268.8_ran 1.0000     50  
+ENSMUST00000146268.8_ran 1.0000     50  ENSMUST00000146268.8_ran 1.0000     50  
+ENSMUST00000150413.2_ran 1.0000     50  ENSMUST00000150413.2_ran 1.0000     50  
+ENSMUST00000150413.2_ran 1.0000     50  ENSMUST00000150413.2_ran 1.0000     50  
+ENSMUST00000150413.2_ran 1.0000     50  ENSMUST00000155174.8_ran 1.0000     50  
+ENSMUST00000155174.8_ran 1.0000     50  ENSMUST00000156010.2_ran 1.0000     50  
+ENSMUST00000156010.2_ran 1.0000     50  ENSMUST00000156010.2_ran 1.0000     50  
+ENSMUST00000156010.2_ran 1.0000     50  ENSMUST00000156010.2_ran 1.0000     50  
+ENSMUST00000155703.2_ran 1.0000     50  ENSMUST00000155703.2_ran 1.0000     50  
+ENSMUST00000155703.2_ran 1.0000     50  ENSMUST00000150588.2_ran 1.0000     50  
+ENSMUST00000147761.8_ran 1.0000     50  ENSMUST00000147761.8_ran 1.0000     50  
+ENSMUST00000147761.8_ran 1.0000     50  ENSMUST00000147761.8_ran 1.0000     50  
+ENSMUST00000147761.8_ran 1.0000     50  ENSMUST00000295647.1_ran 1.0000     50  
+ENSMUST00000295647.1_ran 1.0000     50  ENSMUST00000167909.2_ran 1.0000     50  
+ENSMUST00000167909.2_ran 1.0000     50  ENSMUST00000167909.2_ran 1.0000     50  
+ENSMUST00000167909.2_ran 1.0000     50  ENSMUST00000226745.2_ran 1.0000     50  
+ENSMUST00000226745.2_ran 1.0000     50  ENSMUST00000226745.2_ran 1.0000     50  
+ENSMUST00000226745.2_ran 1.0000     50  ENSMUST00000226745.2_ran 1.0000     50  
+ENSMUST00000143507.2_ran 1.0000     50  ENSMUST00000143507.2_ran 1.0000     50  
+ENSMUST00000144289.4_ran 1.0000     50  ENSMUST00000108848.2_ran 1.0000     50  
+ENSMUST00000140930.2_ran 1.0000     50  ENSMUST00000140930.2_ran 1.0000     50  
+ENSMUST00000146305.8_ran 1.0000     50  ENSMUST00000141268.8_ran 1.0000     50  
+ENSMUST00000141268.8_ran 1.0000     50  ENSMUST00000141268.8_ran 1.0000     50  
+ENSMUST00000141268.8_ran 1.0000     50  ENSMUST00000141268.8_ran 1.0000     50  
+ENSMUST00000355217.1_ran 1.0000     50  ENSMUST00000206495.2_ran 1.0000     50  
+ENSMUST00000206495.2_ran 1.0000     50  ENSMUST00000206495.2_ran 1.0000     50  
+ENSMUST00000206495.2_ran 1.0000     50  ENSMUST00000206495.2_ran 1.0000     50  
+ENSMUST00000128780.2_ran 1.0000     50  ENSMUST00000172489.3_ran 1.0000     50  
+ENSMUST00000130456.2_ran 1.0000     50  ENSMUST00000205269.2_ran 1.0000     50  
+ENSMUST00000205269.2_ran 1.0000     50  ENSMUST00000205269.2_ran 1.0000     50  
+ENSMUST00000205269.2_ran 1.0000     50  ENSMUST00000137367.2_ran 1.0000     50  
+ENSMUST00000137367.2_ran 1.0000     50  ENSMUST00000137367.2_ran 1.0000     50  
+ENSMUST00000137367.2_ran 1.0000     50  ENSMUST00000137367.2_ran 1.0000     50  
+ENSMUST00000139181.2_ran 1.0000     50  ENSMUST00000176816.8_ran 1.0000     50  
+ENSMUST00000176816.8_ran 1.0000     50  ENSMUST00000199655.5_ran 1.0000     50  
+ENSMUST00000199655.5_ran 1.0000     50  ENSMUST00000199655.5_ran 1.0000     50  
+ENSMUST00000134087.8_ran 1.0000     50  ENSMUST00000341523.1_ran 1.0000     50  
+ENSMUST00000341523.1_ran 1.0000     50  ENSMUST00000230249.2_ran 1.0000     50  
+ENSMUST00000230249.2_ran 1.0000     50  ENSMUST00000230249.2_ran 1.0000     50  
+ENSMUST00000230249.2_ran 1.0000     50  ENSMUST00000230249.2_ran 1.0000     50  
+ENSMUST00000164009.2_ran 1.0000     50  ENSMUST00000208129.2_ran 1.0000     50  
+ENSMUST00000208129.2_ran 1.0000     50  ENSMUST00000208129.2_ran 1.0000     50  
+ENSMUST00000186539.2_ran 1.0000     50  ENSMUST00000186539.2_ran 1.0000     50  
+ENSMUST00000186539.2_ran 1.0000     50  ENSMUST00000151510.2_ran 1.0000     50  
+ENSMUST00000123338.8_ran 1.0000     50  ENSMUST00000123338.8_ran 1.0000     50  
+ENSMUST00000123338.8_ran 1.0000     50  ENSMUST00000123338.8_ran 1.0000     50  
+ENSMUST00000123338.8_ran 1.0000     50  ENSMUST00000235109.2_ran 1.0000     50  
+ENSMUST00000247114.1_ran 1.0000     50  ENSMUST00000247114.1_ran 1.0000     50  
+ENSMUST00000247114.1_ran 1.0000     50  ENSMUST00000247114.1_ran 1.0000     50  
+ENSMUST00000247114.1_ran 1.0000     50  ENSMUST00000150542.2_ran 1.0000     50  
+ENSMUST00000144931.2_ran 1.0000     50  ENSMUST00000144931.2_ran 1.0000     50  
+ENSMUST00000144931.2_ran 1.0000     50  ENSMUST00000144931.2_ran 1.0000     50  
+ENSMUST00000144931.2_ran 1.0000     50  ENSMUST00000166952.8_ran 1.0000     50  
+ENSMUST00000186575.2_ran 1.0000     50  ENSMUST00000186575.2_ran 1.0000     50  
+ENSMUST00000186575.2_ran 1.0000     50  ENSMUST00000186575.2_ran 1.0000     50  
+ENSMUST00000186575.2_ran 1.0000     50  ENSMUST00000147439.8_ran 1.0000     50  
+ENSMUST00000120051.2_ran 1.0000     50  ENSMUST00000167883.2_ran 1.0000     50  
+ENSMUST00000167883.2_ran 1.0000     50  ENSMUST00000167883.2_ran 1.0000     50  
+ENSMUST00000167883.2_ran 1.0000     50  ENSMUST00000167883.2_ran 1.0000     50  
+ENSMUST00000139617.2_ran 1.0000     50  ENSMUST00000270333.1_ran 1.0000     50  
+ENSMUST00000270333.1_ran 1.0000     50  ENSMUST00000270333.1_ran 1.0000     50  
+ENSMUST00000270333.1_ran 1.0000     50  ENSMUST00000270333.1_ran 1.0000     50  
+ENSMUST00000135647.2_ran 1.0000     50  ENSMUST00000142659.2_ran 1.0000     50  
+ENSMUST00000142659.2_ran 1.0000     50  ENSMUST00000142659.2_ran 1.0000     50  
+ENSMUST00000142659.2_ran 1.0000     50  ENSMUST00000245734.1_ran 1.0000     50  
+ENSMUST00000245734.1_ran 1.0000     50  ENSMUST00000224148.2_ran 1.0000     50  
+ENSMUST00000224148.2_ran 1.0000     50  ENSMUST00000224148.2_ran 1.0000     50  
+ENSMUST00000224148.2_ran 1.0000     50  ENSMUST00000224148.2_ran 1.0000     50  
+ENSMUST00000109724.2_ran 1.0000     50  ENSMUST00000109724.2_ran 1.0000     50  
+ENSMUST00000109724.2_ran 1.0000     50  ENSMUST00000109724.2_ran 1.0000     50  
+ENSMUST00000109724.2_ran 1.0000     50  ENSMUST00000211272.2_ran 1.0000     50  
+ENSMUST00000132355.2_ran 1.0000     50  ENSMUST00000147858.8_ran 1.0000     50  
+ENSMUST00000147858.8_ran 1.0000     50  ENSMUST00000147858.8_ran 1.0000     50  
+ENSMUST00000123376.8_ran 1.0000     50  ENSMUST00000123376.8_ran 1.0000     50  
+ENSMUST00000123376.8_ran 1.0000     50  ENSMUST00000123376.8_ran 1.0000     50  
+ENSMUST00000123376.8_ran 1.0000     50  ENSMUST00000134831.2_ran 1.0000     50  
+ENSMUST00000134831.2_ran 1.0000     50  ENSMUST00000134831.2_ran 1.0000     50  
+ENSMUST00000134831.2_ran 1.0000     50  ENSMUST00000134831.2_ran 1.0000     50  
+ENSMUST00000212876.2_ran 1.0000     50  ENSMUST00000145764.2_ran 1.0000     50  
+ENSMUST00000145764.2_ran 1.0000     50  ENSMUST00000143221.2_ran 1.0000     50  
+ENSMUST00000143221.2_ran 1.0000     50  ENSMUST00000144554.2_ran 1.0000     50  
+ENSMUST00000144554.2_ran 1.0000     50  ENSMUST00000171081.8_ran 1.0000     50  
+ENSMUST00000171081.8_ran 1.0000     50  ENSMUST00000171081.8_ran 1.0000     50  
+ENSMUST00000171081.8_ran 1.0000     50  ENSMUST00000132380.2_ran 1.0000     50  
+ENSMUST00000132380.2_ran 1.0000     50  ENSMUST00000132380.2_ran 1.0000     50  
+ENSMUST00000132380.2_ran 1.0000     50  ENSMUST00000132380.2_ran 1.0000     50  
+ENSMUST00000176066.8_ran 1.0000     50  ENSMUST00000176066.8_ran 1.0000     50  
+ENSMUST00000176066.8_ran 1.0000     50  ENSMUST00000176066.8_ran 1.0000     50  
+ENSMUST00000176066.8_ran 1.0000     50  ENSMUST00000126845.2_ran 1.0000     50  
+ENSMUST00000127810.2_ran 1.0000     50  ENSMUST00000127810.2_ran 1.0000     50  
+ENSMUST00000127810.2_ran 1.0000     50  ENSMUST00000127810.2_ran 1.0000     50  
+ENSMUST00000127810.2_ran 1.0000     50  ENSMUST00000242628.1_ran 1.0000     50  
+ENSMUST00000242628.1_ran 1.0000     50  ENSMUST00000242628.1_ran 1.0000     50  
+ENSMUST00000242628.1_ran 1.0000     50  ENSMUST00000242628.1_ran 1.0000     50  
+ENSMUST00000219906.2_ran 1.0000     50  ENSMUST00000147997.2_ran 1.0000     50  
+ENSMUST00000147997.2_ran 1.0000     50  ENSMUST00000147997.2_ran 1.0000     50  
+ENSMUST00000147997.2_ran 1.0000     50  ENSMUST00000147997.2_ran 1.0000     50  
+ENSMUST00000246013.1_ran 1.0000     50  ENSMUST00000246013.1_ran 1.0000     50  
+ENSMUST00000246013.1_ran 1.0000     50  ENSMUST00000246013.1_ran 1.0000     50  
+ENSMUST00000246013.1_ran 1.0000     50  ENSMUST00000133194.2_ran 1.0000     50  
+ENSMUST00000149529.8_ran 1.0000     50  ENSMUST00000149529.8_ran 1.0000     50  
+ENSMUST00000149529.8_ran 1.0000     50  ENSMUST00000218764.2_ran 1.0000     50  
+ENSMUST00000173378.8_ran 1.0000     50  ENSMUST00000173378.8_ran 1.0000     50  
+ENSMUST00000173378.8_ran 1.0000     50  ENSMUST00000143358.3_ran 1.0000     50  
+ENSMUST00000150773.8_ran 1.0000     50  ENSMUST00000150773.8_ran 1.0000     50  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme meme_input_split/nucleus_negative_motifs.fasta -dna -oc meme_results/nucleus_negative -mod zoops -nmotifs 10 -minw 6 -maxw 15 
+
+model:  mod=         zoops    nmotifs=        10    evt=           inf
+object function=  E-value of product of p-values
+width:  minw=            6    maxw=           15
+width:  wg=             11    ws=              1    endgaps=       yes
+nsites: minsites=        2    maxsites=      446    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+global: substring=     yes    branching=      no    wbranch=        no
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+data:   n=           22300    N=             446    shuffle=        -1
+strands: +
+sample: seed=            0    ctfrac=         -1    maxwords=       -1
+Letter frequencies in dataset:
+A 0.247 C 0.245 G 0.274 T 0.234 
+Background letter frequencies (from dataset with add-one prior applied):
+A 0.247 C 0.245 G 0.274 T 0.234 
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  1 MEME	width =  15  sites =  41  llr = 385  E-value = 1.2e-009
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :1a319727:156:7
+pos.-specific     C  13::21:::152:22
+probability       G  65:77:28:54:181
+matrix            T  3:::::1:33:34::
+
+         bits    2.1                
+                 1.9                
+                 1.7   *            
+                 1.5   *  *         
+Relative         1.3   *  * **    * 
+Entropy          1.0   ** * **    * 
+(13.5 bits)      0.8   ** ****   ***
+                 0.6 * ******* * ***
+                 0.4 ***************
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           GGAGGAAGAGCAAGA
+consensus            TC A    TTGTT  
+sequence                        C   
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000188008.7_ran     29  7.67e-08 ACGATGAAGA TGAGGAAGATGAAGA GGAGGAT   
+ENSMUST00000172489.3_ran      1  1.37e-07          . GGAGGAAGTTCTAGA AAGGTTGAGG
+ENSMUST00000208888.2_ran     34  2.03e-07 GGGAGATCTC GCAGGAAGAGGCAGA TT        
+ENSMUST00000208888.2_ran      5  2.03e-07       TCTC GCAGGAAGAGGCAGA TTTATGGCTA
+ENSMUST00000171081.8_ran     18  6.88e-07 TCCTTCTCCA GCAGCAAGAGCCAGA GGGAGGGAGC
+ENSMUST00000171081.8_ran      3  6.88e-07         CA GCAGCAAGAGCCAGA GGGAGGGAGC
+ENSMUST00000143506.8_ran     13  4.27e-06 CCAAGGGAAG GGAGGAAGAGACAGC CGCTCTGGAT
+ENSMUST00000224549.2_ran     25  4.27e-06 ACCATCCGGA CCAGGAAGTTCATGA CCAACCGTCT
+ENSMUST00000224549.2_ran      5  4.27e-06       CGGA CCAGGAAGTTCATGA CCAACCGTCT
+ENSMUST00000229939.2_ran     15  6.12e-06 ACAGCGACAT GGAGGAGGAGGAGGA CCCAAAGACT
+ENSMUST00000123376.8_ran     15  7.73e-06 TGGGCTTTCG GGAGGAGGTGCCACA GGTGTTGCTT
+ENSMUST00000208129.2_ran     22  9.64e-06 ATAACCACCA TGAGGAAAAGGTTCA GGAATGGCCT
+ENSMUST00000148536.2_ran     15  1.07e-05 AGCAGGCACA GGAGCATGAGGCTGA GCGCCTGCGC
+ENSMUST00000177281.8_ran     15  1.07e-05 GCCATGGGAA GGAAGAAATTCAACA TGGACCCCAA
+ENSMUST00000246013.1_ran     20  1.20e-05 TACAGCTGTG GGAGAAAGTGCTTGC TGCCAAGCTT
+ENSMUST00000247114.1_ran     14  1.20e-05 TACAGCTGTG GGAGAAAGTGCTTGC TGCCAAGCTT
+ENSMUST00000198984.5_ran     35  1.20e-05 AGTGCTGTGT CCAGGATGATCATGA A         
+ENSMUST00000209916.2_ran     21  1.20e-05 GCTGAAGAGA GGAGGATGATCTAGG ACGCTGTCCG
+ENSMUST00000128262.2_ran     27  1.20e-05 TGAGTGGTGG GGAGCAGGAGGATGC AGTGAGGCT 
+ENSMUST00000128262.2_ran     12  1.20e-05 TGAGTGGTGG GGAGCAGGAGGATGC AGTGAGGCTC
+ENSMUST00000167909.2_ran     34  1.47e-05 TTTGCAATGG GAAGCAAGATGTACA GA        
+ENSMUST00000124006.2_ran     31  1.63e-05 TCGCACAGCT GGAAGAGGAGCTGGA GGAGG     
+ENSMUST00000235109.2_ran      3  1.80e-05         AG GAAGCAAGAGGAGGA GACCGCCCAG
+ENSMUST00000148536.2_ran     33  1.99e-05 AAAGACTGAA TGAAGAAAATCAAGG GCT       
+ENSMUST00000167883.2_ran      6  2.19e-05      CAAGA TGAGGAAAAGCAACG AGCTTTGCTG
+ENSMUST00000155437.2_ran     25  2.64e-05 AGAAAAACCG GAAAGAGAATGAAGA TGGTTGGGAC
+ENSMUST00000211874.2_ran     22  2.64e-05 TGCCAGAAAG GCAAGAAGACCTTGC GTGACAGCTA
+ENSMUST00000211812.2_ran     36  2.64e-05 ATTTTTTGAA TAAAGAAGAAGAAGA           
+ENSMUST00000186575.2_ran     27  3.46e-05 AATGTTATGA TGAAGAAATGCTTCA TCATTAGAA 
+ENSMUST00000149529.8_ran      1  4.12e-05          . GAAGGAAGACACTGA GAAGGAACGG
+ENSMUST00000172781.8_ran     12  4.49e-05 TACATCGGCT GGAGAAAGAGCGAGC CAAACAGGAG
+ENSMUST00000229939.2_ran      8  4.87e-05    CCATCAC TTAGAAAGTTCTAGA TAGAGGGTAG
+ENSMUST00000146847.2_ran      5  5.29e-05       AACC TCAAGATGATGATCA TCTTGGGAGT
+ENSMUST00000207769.2_ran      5  6.21e-05       CGGC GCAGGCGGAACAAGA TGACTCAATA
+ENSMUST00000123338.8_ran     33  6.71e-05 CCTGTGAGCC TGAAGCTGATGATGA CCT       
+ENSMUST00000172208.2_ran     13  6.71e-05 TGCTGCTGCC TGTGGCAGAGCTTGA AGGAAAGGAG
+ENSMUST00000212595.2_ran     28  7.25e-05 AGATGCTGAA GCAGGCAGTGGAACC CACAGGAG  
+ENSMUST00000174434.8_ran     15  7.81e-05 GGGGAAACCT TTAGCAAGTCCAAGA GAAAGCCCAC
+ENSMUST00000150413.2_ran     14  8.42e-05 TGACCAAGCC CAAAGAGGAGAAAGA TGCTTCTAAG
+ENSMUST00000245442.1_ran     25  8.42e-05 TTCAAACAGT GGTGGAAATGAAAGA GGGATGTGAG
+ENSMUST00000186539.2_ran     14  1.47e-04 AAGTCATGCT TGAAAAAAATCCAGG TCCCCAAGTC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000188008.7_ran          7.7e-08  28_[+1]_7
+ENSMUST00000172489.3_ran          1.4e-07  [+1]_35
+ENSMUST00000208888.2_ran            2e-07  33_[+1]_2
+ENSMUST00000208888.2_ran            2e-07  4_[+1]_31
+ENSMUST00000171081.8_ran          6.9e-07  17_[+1]_18
+ENSMUST00000171081.8_ran          6.9e-07  2_[+1]_33
+ENSMUST00000143506.8_ran          4.3e-06  12_[+1]_23
+ENSMUST00000224549.2_ran          4.3e-06  24_[+1]_11
+ENSMUST00000224549.2_ran          4.3e-06  4_[+1]_31
+ENSMUST00000229939.2_ran          6.1e-06  14_[+1]_21
+ENSMUST00000123376.8_ran          7.7e-06  14_[+1]_21
+ENSMUST00000208129.2_ran          9.6e-06  21_[+1]_14
+ENSMUST00000148536.2_ran          1.1e-05  14_[+1]_21
+ENSMUST00000177281.8_ran          1.1e-05  14_[+1]_21
+ENSMUST00000246013.1_ran          1.2e-05  19_[+1]_16
+ENSMUST00000247114.1_ran          1.2e-05  13_[+1]_22
+ENSMUST00000198984.5_ran          1.2e-05  34_[+1]_1
+ENSMUST00000209916.2_ran          1.2e-05  20_[+1]_15
+ENSMUST00000128262.2_ran          1.2e-05  26_[+1]_9
+ENSMUST00000128262.2_ran          1.2e-05  11_[+1]_24
+ENSMUST00000167909.2_ran          1.5e-05  33_[+1]_2
+ENSMUST00000124006.2_ran          1.6e-05  30_[+1]_5
+ENSMUST00000235109.2_ran          1.8e-05  2_[+1]_33
+ENSMUST00000148536.2_ran            2e-05  32_[+1]_3
+ENSMUST00000167883.2_ran          2.2e-05  5_[+1]_30
+ENSMUST00000155437.2_ran          2.6e-05  24_[+1]_11
+ENSMUST00000211874.2_ran          2.6e-05  21_[+1]_14
+ENSMUST00000211812.2_ran          2.6e-05  35_[+1]
+ENSMUST00000186575.2_ran          3.5e-05  26_[+1]_9
+ENSMUST00000149529.8_ran          4.1e-05  [+1]_35
+ENSMUST00000172781.8_ran          4.5e-05  11_[+1]_24
+ENSMUST00000229939.2_ran          4.9e-05  7_[+1]_28
+ENSMUST00000146847.2_ran          5.3e-05  4_[+1]_31
+ENSMUST00000207769.2_ran          6.2e-05  4_[+1]_31
+ENSMUST00000123338.8_ran          6.7e-05  32_[+1]_3
+ENSMUST00000172208.2_ran          6.7e-05  12_[+1]_23
+ENSMUST00000212595.2_ran          7.2e-05  27_[+1]_8
+ENSMUST00000174434.8_ran          7.8e-05  14_[+1]_21
+ENSMUST00000150413.2_ran          8.4e-05  13_[+1]_22
+ENSMUST00000245442.1_ran          8.4e-05  24_[+1]_11
+ENSMUST00000186539.2_ran          0.00015  13_[+1]_22
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 1 width=15 seqs=41
+ENSMUST00000188008.7_ran (   29) TGAGGAAGATGAAGA  1 
+ENSMUST00000172489.3_ran (    1) GGAGGAAGTTCTAGA  1 
+ENSMUST00000208888.2_ran (   34) GCAGGAAGAGGCAGA  1 
+ENSMUST00000208888.2_ran (    5) GCAGGAAGAGGCAGA  1 
+ENSMUST00000171081.8_ran (   18) GCAGCAAGAGCCAGA  1 
+ENSMUST00000171081.8_ran (    3) GCAGCAAGAGCCAGA  1 
+ENSMUST00000143506.8_ran (   13) GGAGGAAGAGACAGC  1 
+ENSMUST00000224549.2_ran (   25) CCAGGAAGTTCATGA  1 
+ENSMUST00000224549.2_ran (    5) CCAGGAAGTTCATGA  1 
+ENSMUST00000229939.2_ran (   15) GGAGGAGGAGGAGGA  1 
+ENSMUST00000123376.8_ran (   15) GGAGGAGGTGCCACA  1 
+ENSMUST00000208129.2_ran (   22) TGAGGAAAAGGTTCA  1 
+ENSMUST00000148536.2_ran (   15) GGAGCATGAGGCTGA  1 
+ENSMUST00000177281.8_ran (   15) GGAAGAAATTCAACA  1 
+ENSMUST00000246013.1_ran (   20) GGAGAAAGTGCTTGC  1 
+ENSMUST00000247114.1_ran (   14) GGAGAAAGTGCTTGC  1 
+ENSMUST00000198984.5_ran (   35) CCAGGATGATCATGA  1 
+ENSMUST00000209916.2_ran (   21) GGAGGATGATCTAGG  1 
+ENSMUST00000128262.2_ran (   27) GGAGCAGGAGGATGC  1 
+ENSMUST00000128262.2_ran (   12) GGAGCAGGAGGATGC  1 
+ENSMUST00000167909.2_ran (   34) GAAGCAAGATGTACA  1 
+ENSMUST00000124006.2_ran (   31) GGAAGAGGAGCTGGA  1 
+ENSMUST00000235109.2_ran (    3) GAAGCAAGAGGAGGA  1 
+ENSMUST00000148536.2_ran (   33) TGAAGAAAATCAAGG  1 
+ENSMUST00000167883.2_ran (    6) TGAGGAAAAGCAACG  1 
+ENSMUST00000155437.2_ran (   25) GAAAGAGAATGAAGA  1 
+ENSMUST00000211874.2_ran (   22) GCAAGAAGACCTTGC  1 
+ENSMUST00000211812.2_ran (   36) TAAAGAAGAAGAAGA  1 
+ENSMUST00000186575.2_ran (   27) TGAAGAAATGCTTCA  1 
+ENSMUST00000149529.8_ran (    1) GAAGGAAGACACTGA  1 
+ENSMUST00000172781.8_ran (   12) GGAGAAAGAGCGAGC  1 
+ENSMUST00000229939.2_ran (    8) TTAGAAAGTTCTAGA  1 
+ENSMUST00000146847.2_ran (    5) TCAAGATGATGATCA  1 
+ENSMUST00000207769.2_ran (    5) GCAGGCGGAACAAGA  1 
+ENSMUST00000123338.8_ran (   33) TGAAGCTGATGATGA  1 
+ENSMUST00000172208.2_ran (   13) TGTGGCAGAGCTTGA  1 
+ENSMUST00000212595.2_ran (   28) GCAGGCAGTGGAACC  1 
+ENSMUST00000174434.8_ran (   15) TTAGCAAGTCCAAGA  1 
+ENSMUST00000150413.2_ran (   14) CAAAGAGGAGAAAGA  1 
+ENSMUST00000245442.1_ran (   25) GGTGGAAATGAAAGA  1 
+ENSMUST00000186539.2_ran (   14) TGAAAAAAATCCAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 10.1016 E= 1.2e-009 
+ -1200   -133    115     33 
+   -76     13     97   -226 
+   194  -1200  -1200   -226 
+    12  -1200    142  -1200 
+  -102    -33    132  -1200 
+   187   -133  -1200  -1200 
+   146  -1200    -49    -94 
+   -34  -1200    155  -1200 
+   152  -1200  -1200     33 
+  -234   -174     97     55 
+  -134    113     42  -1200 
+    98    -16   -349     20 
+   118  -1200   -191     65 
+ -1200    -33    155  -1200 
+   152    -33   -149  -1200 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 41 E= 1.2e-009 
+ 0.000000  0.097561  0.609756  0.292683 
+ 0.146341  0.268293  0.536585  0.048780 
+ 0.951220  0.000000  0.000000  0.048780 
+ 0.268293  0.000000  0.731707  0.000000 
+ 0.121951  0.195122  0.682927  0.000000 
+ 0.902439  0.097561  0.000000  0.000000 
+ 0.682927  0.000000  0.195122  0.121951 
+ 0.195122  0.000000  0.804878  0.000000 
+ 0.707317  0.000000  0.000000  0.292683 
+ 0.048780  0.073171  0.536585  0.341463 
+ 0.097561  0.536585  0.365854  0.000000 
+ 0.487805  0.219512  0.024390  0.268293 
+ 0.560976  0.000000  0.073171  0.365854 
+ 0.000000  0.195122  0.804878  0.000000 
+ 0.707317  0.195122  0.097561  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 1 regular expression
+--------------------------------------------------------------------------------
+[GT][GC]A[GA]GAAG[AT][GT][CG][ATC][AT]GA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 19.77 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  2 MEME	width =  15  sites =  15  llr = 187  E-value = 1.8e-003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::31111::::::51
+pos.-specific     C  ::76::45::9:41:
+probability       G  89:::83::7::::9
+matrix            T  21:39135a31a641
+
+         bits    2.1         *  *   
+                 1.9         *  *   
+                 1.7         *  *   
+                 1.5     *   * **   
+Relative         1.3 **  *   * **  *
+Entropy          1.0 *** ** ****** *
+(18.0 bits)      0.8 *** ** ********
+                 0.6 ****** ********
+                 0.4 ****** ********
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           GGCCTGCCTGCTTAG
+consensus            T AT  GT T  CT 
+sequence                   T        
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000246013.1_ran     15  6.79e-09 AAGTTGCAGT GGCCTGTTTGCTTAG GCACTGAAGT
+ENSMUST00000242628.1_ran      2  6.79e-09          T GGCCTGTTTGCTTAG GCACTGAAGT
+ENSMUST00000247114.1_ran     29  6.79e-09 AAGTTGCAGT GGCCTGTTTGCTTAG GCACTGA   
+ENSMUST00000176066.8_ran     30  3.30e-08 AGGACATGCA GGCTTGCTTGCTTTG CTGAGT    
+ENSMUST00000177281.8_ran     16  2.14e-07 ACAGTGAGCT GGACTGGCTTCTTTG GGTGCGGGAG
+ENSMUST00000186575.2_ran      1  5.09e-07          . GGACTTCCTGCTCTG TATGGATTTT
+ENSMUST00000198030.2_ran     23  9.66e-07 GCTTTCTTCT GTACTGGCTGCTCTG ATTGGAATCG
+ENSMUST00000150773.8_ran     12  1.25e-06 CCTGGGCGCC GTCATGGCTGCTTAG GCTGCGCCTG
+ENSMUST00000135647.2_ran     14  1.58e-06 GTTCACAGAC TGCTTTCCTGCTCAG TGATAAAGCC
+ENSMUST00000205269.2_ran      1  1.84e-06          . TGCCTACCTGCTCTG TGATGTGTGG
+ENSMUST00000143506.8_ran     12  3.03e-06 GAGAAGCGTG GGCAAGCTTTCTCAG ACGGCCTCAG
+ENSMUST00000147997.2_ran      1  3.47e-06          . GGACAGCCTGCTTAT TGATTGCTGA
+ENSMUST00000156010.2_ran     35  4.71e-06 CTGCTCTCTG GGATTGGTTTCTTAA A         
+ENSMUST00000238570.2_ran     14  5.00e-06 AGGTTTGAGG GGCTTGATTTTTTTG TAAATAAAAT
+ENSMUST00000123376.8_ran     34  5.93e-06 TCAACAAGGA TGCCTGTCTGTTCCG GA        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000246013.1_ran          6.8e-09  14_[+2]_21
+ENSMUST00000242628.1_ran          6.8e-09  1_[+2]_34
+ENSMUST00000247114.1_ran          6.8e-09  28_[+2]_7
+ENSMUST00000176066.8_ran          3.3e-08  29_[+2]_6
+ENSMUST00000177281.8_ran          2.1e-07  15_[+2]_20
+ENSMUST00000186575.2_ran          5.1e-07  [+2]_35
+ENSMUST00000198030.2_ran          9.7e-07  22_[+2]_13
+ENSMUST00000150773.8_ran          1.3e-06  11_[+2]_24
+ENSMUST00000135647.2_ran          1.6e-06  13_[+2]_22
+ENSMUST00000205269.2_ran          1.8e-06  [+2]_35
+ENSMUST00000143506.8_ran            3e-06  11_[+2]_24
+ENSMUST00000147997.2_ran          3.5e-06  [+2]_35
+ENSMUST00000156010.2_ran          4.7e-06  34_[+2]_1
+ENSMUST00000238570.2_ran            5e-06  13_[+2]_22
+ENSMUST00000123376.8_ran          5.9e-06  33_[+2]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 2 width=15 seqs=15
+ENSMUST00000246013.1_ran (   15) GGCCTGTTTGCTTAG  1 
+ENSMUST00000242628.1_ran (    2) GGCCTGTTTGCTTAG  1 
+ENSMUST00000247114.1_ran (   29) GGCCTGTTTGCTTAG  1 
+ENSMUST00000176066.8_ran (   30) GGCTTGCTTGCTTTG  1 
+ENSMUST00000177281.8_ran (   16) GGACTGGCTTCTTTG  1 
+ENSMUST00000186575.2_ran (    1) GGACTTCCTGCTCTG  1 
+ENSMUST00000198030.2_ran (   23) GTACTGGCTGCTCTG  1 
+ENSMUST00000150773.8_ran (   12) GTCATGGCTGCTTAG  1 
+ENSMUST00000135647.2_ran (   14) TGCTTTCCTGCTCAG  1 
+ENSMUST00000205269.2_ran (    1) TGCCTACCTGCTCTG  1 
+ENSMUST00000143506.8_ran (   12) GGCAAGCTTTCTCAG  1 
+ENSMUST00000147997.2_ran (    1) GGACAGCCTGCTTAT  1 
+ENSMUST00000156010.2_ran (   35) GGATTGGTTTCTTAA  1 
+ENSMUST00000238570.2_ran (   14) GGCTTGATTTTTTTG  1 
+ENSMUST00000123376.8_ran (   34) TGCCTGTCTGTTCCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 11.338 E= 1.8e-003 
+ -1055  -1055    154    -22 
+ -1055  -1055    166    -81 
+    43    144  -1055  -1055 
+   -89    129  -1055     19 
+   -89  -1055  -1055    189 
+  -189  -1055    154    -81 
+  -189     71     -4     19 
+ -1055    112  -1055    100 
+ -1055  -1055  -1055    210 
+ -1055  -1055    142     19 
+ -1055    182  -1055    -81 
+ -1055  -1055  -1055    210 
+ -1055     71  -1055    136 
+   111   -187  -1055     78 
+  -189  -1055    166   -181 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 15 E= 1.8e-003 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.000000  0.000000  0.866667  0.133333 
+ 0.333333  0.666667  0.000000  0.000000 
+ 0.133333  0.600000  0.000000  0.266667 
+ 0.133333  0.000000  0.000000  0.866667 
+ 0.066667  0.000000  0.800000  0.133333 
+ 0.066667  0.400000  0.266667  0.266667 
+ 0.000000  0.533333  0.000000  0.466667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.733333  0.266667 
+ 0.000000  0.866667  0.000000  0.133333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.533333  0.066667  0.000000  0.400000 
+ 0.066667  0.000000  0.866667  0.066667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 2 regular expression
+--------------------------------------------------------------------------------
+[GT]G[CA][CT]TG[CGT][CT]T[GT]CT[TC][AT]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time 33.47 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  3 MEME	width =  15  sites =  30  llr = 291  E-value = 4.9e-002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 3 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::6:142:51132
+pos.-specific     C  685a::832a48934
+probability       G  41::17:12:::::4
+matrix            T  115:23124:11:41
+
+         bits    2.1    *     *     
+                 1.9    *     *     
+                 1.7    *     *  *  
+                 1.5    *     *  *  
+Relative         1.3  * *     *  *  
+Entropy          1.0  * * **  * **  
+(14.0 bits)      0.8  *** **  * **  
+                 0.6 *******  ****  
+                 0.4 *******  ***** 
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           CCTCAGCATCACCTG
+consensus            G C TT CA C  CC
+sequence                    TC    A 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000229896.2_ran      8  7.46e-09    TAGACTC CCCCAGCCTCACCTC CCTTGCACTC
+ENSMUST00000207769.2_ran     21  4.83e-07 GGGCCCGGCA CCCCAGCCGCACCAC AAAGGCTGAA
+ENSMUST00000230249.2_ran      4  5.62e-07        CTA GCCCATCATCACCCC CACCCCTGGG
+ENSMUST00000229896.2_ran      1  5.62e-07          . GCCCATCATCACCCC CACCCCTGGG
+ENSMUST00000229896.2_ran     16  5.62e-07 TCCAGCTCTA GCCCATCATCACCCC CACCCCTGGG
+ENSMUST00000212595.2_ran     30  1.29e-06 AGGACAGACG CCTCTGCTCCCCCTG GCTGAT    
+ENSMUST00000146371.8_ran      9  1.29e-06   TCCCTCCA CCCCAGCTACTCCTC TCTAAACTGT
+ENSMUST00000109724.2_ran     30  5.83e-06 CTGAATGGTG CCCCATCGCCACCAC AGAGAT    
+ENSMUST00000230249.2_ran     11  7.19e-06 ACACCTGGTC CCGCAGCCTCCCCAG AGCAGCTGTC
+ENSMUST00000123376.8_ran      8  1.08e-05    GGTTGCG CCCCAGCCTCCACCA TGCCAATCAC
+ENSMUST00000183817.2_ran     24  1.08e-05 TGGCAGCCTG GGTCAGCTGCACCTG GCCAGGCTCT
+ENSMUST00000190131.2_ran     11  1.08e-05 TGCTCTCAAA CCTCGGCCACCCCCA GAGCCCTCCA
+ENSMUST00000154834.2_ran      6  1.08e-05      CATGG CCTCTGCATCAGCTC CTGCTTCCTG
+ENSMUST00000134153.2_ran     18  1.30e-05 GTTATGTATG CCTCAGCCTCCCAAA TAACTACAGG
+ENSMUST00000226122.2_ran     11  1.30e-05 GTCGCGATAT GCTCTGAACCACCCG GACACAGTTG
+ENSMUST00000228164.2_ran     35  1.30e-05 GTCGCGATAT GCTCTGAACCACCCG G         
+ENSMUST00000137435.2_ran     23  1.43e-05 AGAGGAGGCT TCCCATCTGCACCTG TGGATAGGTA
+ENSMUST00000154834.2_ran      4  1.43e-05        GGC GCTCAGTAACCCCAG ATGAAGGTCA
+ENSMUST00000211272.2_ran     22  1.87e-05 CTCTCAGGCT CTCCATCCTCCCCTA TGGGCGACAT
+ENSMUST00000040081.7_ran     29  2.22e-05 TCTGGGCTCC GCTCAGCTGCCCATG CGCTCGG   
+ENSMUST00000149529.8_ran      3  2.62e-05         TT CCCCAGTACCACCCT AGCATTGGGG
+ENSMUST00000176066.8_ran     36  2.84e-05 TGCTGGCGGA GCTCGGCTTCATCCG           
+ENSMUST00000173378.8_ran     28  3.34e-05 TGCTGCCCGT CCTCCTCATCCCCAA GCCCCTCA  
+ENSMUST00000206095.2_ran     12  3.61e-05 GTTCTCTGCC TCTCGGCCTCTCCTG TGTTCTCCAG
+ENSMUST00000207394.2_ran     20  3.61e-05 CAAGATCCGT CCCCAGAAACCTCAC CACCCATTTG
+ENSMUST00000169644.2_ran     10  4.88e-05  CTACCATGC CTTCAGCAGCCTCTG CTATTTCACC
+ENSMUST00000246193.2_ran     29  5.25e-05 CCTCTCTAGT CCCCTGCCACTACCC TCTTGGG   
+ENSMUST00000127810.2_ran     24  6.05e-05 GGCCTGCCAA CGTCAGAGACACCTG GATCGGAGAG
+ENSMUST00000174434.8_ran      4  6.96e-05        GAG GCTCTTCTACTCCTT TTTCAAGTCT
+ENSMUST00000142659.2_ran      3  7.46e-05         AA GGCCTGCGCCACCAC CGCCCAGCTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000229896.2_ran          7.5e-09  7_[+3]_28
+ENSMUST00000207769.2_ran          4.8e-07  20_[+3]_15
+ENSMUST00000230249.2_ran          5.6e-07  3_[+3]_32
+ENSMUST00000229896.2_ran          5.6e-07  [+3]_35
+ENSMUST00000229896.2_ran          5.6e-07  15_[+3]_20
+ENSMUST00000212595.2_ran          1.3e-06  29_[+3]_6
+ENSMUST00000146371.8_ran          1.3e-06  8_[+3]_27
+ENSMUST00000109724.2_ran          5.8e-06  29_[+3]_6
+ENSMUST00000230249.2_ran          7.2e-06  10_[+3]_25
+ENSMUST00000123376.8_ran          1.1e-05  7_[+3]_28
+ENSMUST00000183817.2_ran          1.1e-05  23_[+3]_12
+ENSMUST00000190131.2_ran          1.1e-05  10_[+3]_25
+ENSMUST00000154834.2_ran          1.1e-05  5_[+3]_30
+ENSMUST00000134153.2_ran          1.3e-05  17_[+3]_18
+ENSMUST00000226122.2_ran          1.3e-05  10_[+3]_25
+ENSMUST00000228164.2_ran          1.3e-05  34_[+3]_1
+ENSMUST00000137435.2_ran          1.4e-05  22_[+3]_13
+ENSMUST00000154834.2_ran          1.4e-05  3_[+3]_32
+ENSMUST00000211272.2_ran          1.9e-05  21_[+3]_14
+ENSMUST00000040081.7_ran          2.2e-05  28_[+3]_7
+ENSMUST00000149529.8_ran          2.6e-05  2_[+3]_33
+ENSMUST00000176066.8_ran          2.8e-05  35_[+3]
+ENSMUST00000173378.8_ran          3.3e-05  27_[+3]_8
+ENSMUST00000206095.2_ran          3.6e-05  11_[+3]_24
+ENSMUST00000207394.2_ran          3.6e-05  19_[+3]_16
+ENSMUST00000169644.2_ran          4.9e-05  9_[+3]_26
+ENSMUST00000246193.2_ran          5.2e-05  28_[+3]_7
+ENSMUST00000127810.2_ran          6.1e-05  23_[+3]_12
+ENSMUST00000174434.8_ran            7e-05  3_[+3]_32
+ENSMUST00000142659.2_ran          7.5e-05  2_[+3]_33
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 3 width=15 seqs=30
+ENSMUST00000229896.2_ran (    8) CCCCAGCCTCACCTC  1 
+ENSMUST00000207769.2_ran (   21) CCCCAGCCGCACCAC  1 
+ENSMUST00000230249.2_ran (    4) GCCCATCATCACCCC  1 
+ENSMUST00000229896.2_ran (    1) GCCCATCATCACCCC  1 
+ENSMUST00000229896.2_ran (   16) GCCCATCATCACCCC  1 
+ENSMUST00000212595.2_ran (   30) CCTCTGCTCCCCCTG  1 
+ENSMUST00000146371.8_ran (    9) CCCCAGCTACTCCTC  1 
+ENSMUST00000109724.2_ran (   30) CCCCATCGCCACCAC  1 
+ENSMUST00000230249.2_ran (   11) CCGCAGCCTCCCCAG  1 
+ENSMUST00000123376.8_ran (    8) CCCCAGCCTCCACCA  1 
+ENSMUST00000183817.2_ran (   24) GGTCAGCTGCACCTG  1 
+ENSMUST00000190131.2_ran (   11) CCTCGGCCACCCCCA  1 
+ENSMUST00000154834.2_ran (    6) CCTCTGCATCAGCTC  1 
+ENSMUST00000134153.2_ran (   18) CCTCAGCCTCCCAAA  1 
+ENSMUST00000226122.2_ran (   11) GCTCTGAACCACCCG  1 
+ENSMUST00000228164.2_ran (   35) GCTCTGAACCACCCG  1 
+ENSMUST00000137435.2_ran (   23) TCCCATCTGCACCTG  1 
+ENSMUST00000154834.2_ran (    4) GCTCAGTAACCCCAG  1 
+ENSMUST00000211272.2_ran (   22) CTCCATCCTCCCCTA  1 
+ENSMUST00000040081.7_ran (   29) GCTCAGCTGCCCATG  1 
+ENSMUST00000149529.8_ran (    3) CCCCAGTACCACCCT  1 
+ENSMUST00000176066.8_ran (   36) GCTCGGCTTCATCCG  1 
+ENSMUST00000173378.8_ran (   28) CCTCCTCATCCCCAA  1 
+ENSMUST00000206095.2_ran (   12) TCTCGGCCTCTCCTG  1 
+ENSMUST00000207394.2_ran (   20) CCCCAGAAACCTCAC  1 
+ENSMUST00000169644.2_ran (   10) CTTCAGCAGCCTCTG  1 
+ENSMUST00000246193.2_ran (   29) CCCCTGCCACTACCC  1 
+ENSMUST00000127810.2_ran (   24) CGTCAGAGACACCTG  1 
+ENSMUST00000174434.8_ran (    4) GCTCTTCTACTCCTT  1 
+ENSMUST00000142659.2_ran (    3) GGCCTGCGCCACCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 10.3374 E= 4.9e-002 
+ -1155    121     42   -181 
+ -1155    177   -145   -181 
+ -1155     93   -304    110 
+ -1155    203  -1155  -1155 
+   136   -287   -145      0 
+ -1155  -1155    142     19 
+   -89    171  -1155   -181 
+    57     29   -145      0 
+    -8    -29    -72     78 
+ -1155    203  -1155  -1155 
+   102     58  -1155    -81 
+  -189    171   -304   -122 
+  -189    193  -1155  -1155 
+    11     44  -1155     78 
+   -57     58     54   -181 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 30 E= 4.9e-002 
+ 0.000000  0.566667  0.366667  0.066667 
+ 0.000000  0.833333  0.100000  0.066667 
+ 0.000000  0.466667  0.033333  0.500000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.633333  0.033333  0.100000  0.233333 
+ 0.000000  0.000000  0.733333  0.266667 
+ 0.133333  0.800000  0.000000  0.066667 
+ 0.366667  0.300000  0.100000  0.233333 
+ 0.233333  0.200000  0.166667  0.400000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.366667  0.000000  0.133333 
+ 0.066667  0.800000  0.033333  0.100000 
+ 0.066667  0.933333  0.000000  0.000000 
+ 0.266667  0.333333  0.000000  0.400000 
+ 0.166667  0.366667  0.400000  0.066667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 3 regular expression
+--------------------------------------------------------------------------------
+[CG]C[TC]C[AT][GT]C[ACT][TAC]C[AC]CC[TCA][GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 47.06 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  4 MEME	width =  14  sites =  11  llr = 147  E-value = 7.8e-003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 4 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::::::54:963:
+pos.-specific     C  :3:38::5::::11
+probability       G  :::6::3::8::::
+matrix            T  a7a12a7:621469
+
+         bits    2.1 * *  *        
+                 1.9 * *  *        
+                 1.7 * *  *    *  *
+                 1.5 * *  *    *  *
+Relative         1.3 *** ***  **  *
+Entropy          1.0 *** ******** *
+(19.3 bits)      0.8 *** **********
+                 0.6 **************
+                 0.4 **************
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           TTTGCTTCTGAATT
+consensus             C C  GAA  TA 
+sequence                           
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+ENSMUST00000226366.2_ran      1  4.02e-08          . TTTCCTTCTGATTT TGTGGTTGGG
+ENSMUST00000226366.2_ran     36  4.02e-08 GCGGATGCTT TTTCCTTCTGATTT T         
+ENSMUST00000132380.2_ran      5  9.19e-08       ATAA TTTGCTGCAGAATT GTAATCTATT
+ENSMUST00000217121.2_ran     17  1.29e-07 CCTGGCATAT TTTGCTTATTATTT TTACTTTAAG
+ENSMUST00000206495.2_ran      6  1.83e-07      AACTT TTTGTTTAAGAATT GGTATGATTA
+ENSMUST00000137367.2_ran      5  3.28e-07       AAAT TCTGCTTAAGAAAT AGCTTTGGCC
+ENSMUST00000167883.2_ran     24  5.10e-07 GGATGATCAT TTTGTTGCAGAATT GACATACAAT
+ENSMUST00000206495.2_ran      4  8.05e-07        GCT TCTGCTTCTGTTTT AATGTGTTCG
+ENSMUST00000135216.3_ran     26  1.00e-06 GGTGTCAAGC TCTCCTGATGAAAT GTGTTGTGCC
+ENSMUST00000229939.2_ran     35  1.21e-06 GAGGGTAGTA TTTTCTTATTAAAT AA        
+ENSMUST00000225300.2_ran     21  1.37e-06 AGATGAAGAC TTTGCTTCTGAACC ACATGGTCAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000226366.2_ran            4e-08  [+4]_36
+ENSMUST00000226366.2_ran            4e-08  35_[+4]_1
+ENSMUST00000132380.2_ran          9.2e-08  4_[+4]_32
+ENSMUST00000217121.2_ran          1.3e-07  16_[+4]_20
+ENSMUST00000206495.2_ran          1.8e-07  5_[+4]_31
+ENSMUST00000137367.2_ran          3.3e-07  4_[+4]_32
+ENSMUST00000167883.2_ran          5.1e-07  23_[+4]_13
+ENSMUST00000206495.2_ran            8e-07  3_[+4]_33
+ENSMUST00000135216.3_ran            1e-06  25_[+4]_11
+ENSMUST00000229939.2_ran          1.2e-06  34_[+4]_2
+ENSMUST00000225300.2_ran          1.4e-06  20_[+4]_16
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 4 width=14 seqs=11
+ENSMUST00000226366.2_ran (    1) TTTCCTTCTGATTT  1 
+ENSMUST00000226366.2_ran (   36) TTTCCTTCTGATTT  1 
+ENSMUST00000132380.2_ran (    5) TTTGCTGCAGAATT  1 
+ENSMUST00000217121.2_ran (   17) TTTGCTTATTATTT  1 
+ENSMUST00000206495.2_ran (    6) TTTGTTTAAGAATT  1 
+ENSMUST00000137367.2_ran (    5) TCTGCTTAAGAAAT  1 
+ENSMUST00000167883.2_ran (   24) TTTGTTGCAGAATT  1 
+ENSMUST00000206495.2_ran (    4) TCTGCTTCTGTTTT  1 
+ENSMUST00000135216.3_ran (   26) TCTCCTGATGAAAT  1 
+ENSMUST00000229939.2_ran (   35) TTTTCTTATTAAAT  1 
+ENSMUST00000225300.2_ran (   21) TTTGCTTCTGAACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 16502 bayes= 10.9053 E= 7.8e-003 
+ -1010  -1010  -1010    210 
+ -1010     16  -1010    164 
+ -1010  -1010  -1010    210 
+ -1010     16    121   -136 
+ -1010    174  -1010    -36 
+ -1010  -1010  -1010    210 
+ -1010  -1010     -1    164 
+    88    115  -1010  -1010 
+    56  -1010  -1010    145 
+ -1010  -1010    158    -36 
+   188  -1010  -1010   -136 
+   136  -1010  -1010     64 
+    14   -143  -1010    145 
+ -1010   -143  -1010    196 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 11 E= 7.8e-003 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.272727  0.000000  0.727273 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.272727  0.636364  0.090909 
+ 0.000000  0.818182  0.000000  0.181818 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.272727  0.727273 
+ 0.454545  0.545455  0.000000  0.000000 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.000000  0.000000  0.818182  0.181818 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.636364  0.000000  0.000000  0.363636 
+ 0.272727  0.090909  0.000000  0.636364 
+ 0.000000  0.090909  0.000000  0.909091 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 4 regular expression
+--------------------------------------------------------------------------------
+T[TC]T[GC]CT[TG][CA][TA]GA[AT][TA]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time 59.99 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  5 MEME	width =  15  sites =   6  llr = 97  E-value = 1.0e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 5 Description
+--------------------------------------------------------------------------------
+Simplified        A  2::a2:::2:::78a
+pos.-specific     C  ::a::::a325a:2:
+probability       G  :::::8:::2:::::
+matrix            T  8a::82a:575:3::
+
+         bits    2.1  ***  **   *  *
+                 1.9  ***  **   *  *
+                 1.7  ***  **   *  *
+                 1.5 ***** **   * **
+Relative         1.3 ********   * **
+Entropy          1.0 ********  *****
+(23.4 bits)      0.8 ******** ******
+                 0.6 ***************
+                 0.4 ***************
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           TTCATGTCTTCCAAA
+consensus                    C T T  
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000140215.2_ran      3  1.18e-09         CT TTCATGTCTTCCAAA TCCTGACTCA
+ENSMUST00000176816.8_ran     15  2.41e-09 TCGGGGCTCG TTCATGTCCTTCAAA TGGACGAAGC
+ENSMUST00000176816.8_ran     32  2.41e-09 TCGGGGCTCG TTCATGTCCTTCAAA TGGA      
+ENSMUST00000148536.2_ran      9  7.94e-08   TCACACCC TTCATGTCTCCCTCA GACCAGGTGG
+ENSMUST00000150542.2_ran     22  1.02e-07 TGTCAAACAC ATCATGTCTGTCTAA ACGGAGTTTT
+ENSMUST00000140930.2_ran      8  1.30e-07    TTTTTTT TTCAATTCATCCAAA TAAAAATATC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000140215.2_ran          1.2e-09  2_[+5]_33
+ENSMUST00000176816.8_ran          2.4e-09  14_[+5]_21
+ENSMUST00000176816.8_ran          2.4e-09  31_[+5]_4
+ENSMUST00000148536.2_ran          7.9e-08  8_[+5]_27
+ENSMUST00000150542.2_ran            1e-07  21_[+5]_14
+ENSMUST00000140930.2_ran          1.3e-07  7_[+5]_28
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 5 width=15 seqs=6
+ENSMUST00000140215.2_ran (    3) TTCATGTCTTCCAAA  1 
+ENSMUST00000176816.8_ran (   15) TTCATGTCCTTCAAA  1 
+ENSMUST00000176816.8_ran (   32) TTCATGTCCTTCAAA  1 
+ENSMUST00000148536.2_ran (    9) TTCATGTCTCCCTCA  1 
+ENSMUST00000150542.2_ran (   22) ATCATGTCTGTCTAA  1 
+ENSMUST00000140930.2_ran (    8) TTCAATTCATCCAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 11.0441 E= 1.0e+001 
+   -57   -923   -923    183 
+  -923   -923   -923    210 
+  -923    203   -923   -923 
+   201   -923   -923   -923 
+   -57   -923   -923    183 
+  -923   -923    160    -49 
+  -923   -923   -923    210 
+  -923    203   -923   -923 
+   -57     44   -923    110 
+  -923    -55    -72    151 
+  -923    103   -923    110 
+  -923    203   -923   -923 
+   143   -923   -923     51 
+   175    -55   -923   -923 
+   201   -923   -923   -923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 6 E= 1.0e+001 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.166667  0.000000  0.000000  0.833333 
+ 0.000000  0.000000  0.833333  0.166667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.166667  0.333333  0.000000  0.500000 
+ 0.000000  0.166667  0.166667  0.666667 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.666667  0.000000  0.000000  0.333333 
+ 0.833333  0.166667  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 5 regular expression
+--------------------------------------------------------------------------------
+TTCATGTC[TC]T[CT]C[AT]AA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 74.28 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  6 MEME	width =  10  sites =  21  llr = 201  E-value = 4.2e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 6 Description
+--------------------------------------------------------------------------------
+Simplified        A  :3::5:::::
+pos.-specific     C  a:1a::33a:
+probability       G  ::5::a42::
+matrix            T  :74:5:35:a
+
+         bits    2.1 *  *    **
+                 1.9 *  * *  **
+                 1.7 *  * *  **
+                 1.5 *  * *  **
+Relative         1.3 ** * *  **
+Entropy          1.0 ** ***  **
+(13.8 bits)      0.8 ** ***  **
+                 0.6 ******  **
+                 0.4 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           CTGCTGGTCT
+consensus             AT A CC  
+sequence                   TG  
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+ENSMUST00000146371.8_ran     18  2.64e-06 ACGGGAGACA CTGCAGGTCT GGAAGAAGCG
+ENSMUST00000147997.2_ran      2  5.04e-06          C CTGCTGCTCT CATGAACCTA
+ENSMUST00000132380.2_ran     37  5.04e-06 GAGGTGTCTT CTTCAGGTCT CTTG      
+ENSMUST00000146268.8_ran     40  5.04e-06 GAAAGAGGGG CTGCTGCTCT A         
+ENSMUST00000176297.2_ran      6  5.04e-06      CTGGG CTTCAGGTCT TCTGGGTGGG
+ENSMUST00000270333.1_ran     40  6.40e-06 AACATGCCGT CTTCTGCTCT G         
+ENSMUST00000156010.2_ran     22  6.40e-06 TATTTTTGTA CTTCTGCTCT CTGGGATTGG
+ENSMUST00000174434.8_ran     29  1.23e-05 CAGATGCTGC CTGCAGGCCT CAGGTCCTTA
+ENSMUST00000132380.2_ran      9  2.17e-05   CGGGTTGT CTTCTGGGCT GTGTGGACCT
+ENSMUST00000224148.2_ran     11  2.17e-05 AGGGAACTGA CTGCAGTCCT CATGCTTGGA
+ENSMUST00000151832.2_ran     34  2.61e-05 TAGTGATTGG CAGCAGGTCT GGTCTGA   
+ENSMUST00000142659.2_ran     22  3.15e-05 CACCACCGCC CAGCTGTTCT GTTGTTTTAT
+ENSMUST00000148536.2_ran     19  3.15e-05 ATCCTCTGCC CTTCAGGGCT CAGAGCAGCG
+ENSMUST00000226745.2_ran     26  4.47e-05 GTTCCCTCAG CTTCAGTGCT TTGCCAGAGT
+ENSMUST00000229896.2_ran      5  4.70e-05       GCTG CTCCAGCTCT AGCCCATCAT
+ENSMUST00000199655.5_ran     13  4.89e-05 GTGGGCGTTA CAGCAGGCCT TAGGTATTTC
+ENSMUST00000230249.2_ran     28  5.16e-05 CTCCCCAGAG CAGCTGTCCT TCCGTGAACG
+ENSMUST00000156010.2_ran     24  5.51e-05 ATAGTCCCGC CAGCTGGGCT GAATTTGTGG
+ENSMUST00000341523.1_ran     23  5.94e-05 GGTTAGGTGA CTCCTGCCCT CTTTCCCTCT
+ENSMUST00000207769.2_ran     40  5.94e-05 GATTCGGTCA CTCCTGTCCT G         
+ENSMUST00000137367.2_ran     37  7.21e-05 TCCAACAGGA CATCTGTGCT GGCC      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000146371.8_ran          2.6e-06  17_[+6]_23
+ENSMUST00000147997.2_ran            5e-06  1_[+6]_39
+ENSMUST00000132380.2_ran            5e-06  36_[+6]_4
+ENSMUST00000146268.8_ran            5e-06  39_[+6]_1
+ENSMUST00000176297.2_ran            5e-06  5_[+6]_35
+ENSMUST00000270333.1_ran          6.4e-06  39_[+6]_1
+ENSMUST00000156010.2_ran          6.4e-06  21_[+6]_19
+ENSMUST00000174434.8_ran          1.2e-05  28_[+6]_12
+ENSMUST00000132380.2_ran          2.2e-05  8_[+6]_32
+ENSMUST00000224148.2_ran          2.2e-05  10_[+6]_30
+ENSMUST00000151832.2_ran          2.6e-05  33_[+6]_7
+ENSMUST00000142659.2_ran          3.1e-05  21_[+6]_19
+ENSMUST00000148536.2_ran          3.1e-05  18_[+6]_22
+ENSMUST00000226745.2_ran          4.5e-05  25_[+6]_15
+ENSMUST00000229896.2_ran          4.7e-05  4_[+6]_36
+ENSMUST00000199655.5_ran          4.9e-05  12_[+6]_28
+ENSMUST00000230249.2_ran          5.2e-05  27_[+6]_13
+ENSMUST00000156010.2_ran          5.5e-05  23_[+6]_17
+ENSMUST00000341523.1_ran          5.9e-05  22_[+6]_18
+ENSMUST00000207769.2_ran          5.9e-05  39_[+6]_1
+ENSMUST00000137367.2_ran          7.2e-05  36_[+6]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 6 width=10 seqs=21
+ENSMUST00000146371.8_ran (   18) CTGCAGGTCT  1 
+ENSMUST00000147997.2_ran (    2) CTGCTGCTCT  1 
+ENSMUST00000132380.2_ran (   37) CTTCAGGTCT  1 
+ENSMUST00000146268.8_ran (   40) CTGCTGCTCT  1 
+ENSMUST00000176297.2_ran (    6) CTTCAGGTCT  1 
+ENSMUST00000270333.1_ran (   40) CTTCTGCTCT  1 
+ENSMUST00000156010.2_ran (   22) CTTCTGCTCT  1 
+ENSMUST00000174434.8_ran (   29) CTGCAGGCCT  1 
+ENSMUST00000132380.2_ran (    9) CTTCTGGGCT  1 
+ENSMUST00000224148.2_ran (   11) CTGCAGTCCT  1 
+ENSMUST00000151832.2_ran (   34) CAGCAGGTCT  1 
+ENSMUST00000142659.2_ran (   22) CAGCTGTTCT  1 
+ENSMUST00000148536.2_ran (   19) CTTCAGGGCT  1 
+ENSMUST00000226745.2_ran (   26) CTTCAGTGCT  1 
+ENSMUST00000229896.2_ran (    5) CTCCAGCTCT  1 
+ENSMUST00000199655.5_ran (   13) CAGCAGGCCT  1 
+ENSMUST00000230249.2_ran (   28) CAGCTGTCCT  1 
+ENSMUST00000156010.2_ran (   24) CAGCTGGGCT  1 
+ENSMUST00000341523.1_ran (   23) CTCCTGCCCT  1 
+ENSMUST00000207769.2_ran (   40) CTCCTGTCCT  1 
+ENSMUST00000137367.2_ran (   37) CATCTGTGCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 18286 bayes= 10.0696 E= 4.2e+001 
+ -1104    203  -1104  -1104 
+    21  -1104  -1104    161 
+ -1104    -78     80     71 
+ -1104    203  -1104  -1104 
+    94  -1104  -1104    116 
+ -1104  -1104    187  -1104 
+ -1104     22     64     29 
+ -1104     22    -20    103 
+ -1104    203  -1104  -1104 
+ -1104  -1104  -1104    210 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 21 E= 4.2e+001 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.285714  0.000000  0.000000  0.714286 
+ 0.000000  0.142857  0.476190  0.380952 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.476190  0.000000  0.000000  0.523810 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.285714  0.428571  0.285714 
+ 0.000000  0.285714  0.238095  0.476190 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 6 regular expression
+--------------------------------------------------------------------------------
+C[TA][GT]C[TA]G[GCT][TCG]CT
+--------------------------------------------------------------------------------
+
+
+
+
+Time 87.98 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  7 MEME	width =  11  sites =  15  llr = 163  E-value = 1.5e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 7 Description
+--------------------------------------------------------------------------------
+Simplified        A  :74:8:a:1:a
+pos.-specific     C  23::29::55:
+probability       G  8:6a:1:a:5:
+matrix            T  ::::::::5::
+
+         bits    2.1       *   *
+                 1.9    *  **  *
+                 1.7    * ***  *
+                 1.5    * ***  *
+Relative         1.3 *  *****  *
+Entropy          1.0 ******** **
+(15.7 bits)      0.8 ***********
+                 0.6 ***********
+                 0.4 ***********
+                 0.2 ***********
+                 0.0 -----------
+
+Multilevel           GAGGACAGCGA
+consensus            CCA C   TC 
+sequence                        
+                                
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+ENSMUST00000166952.8_ran      3  3.30e-07         AA GAGGACAGTGA AGACACTGGA
+ENSMUST00000143506.8_ran     36  3.30e-07 GACGGCCTCA GAGGACAGTGA TGTG      
+ENSMUST00000230249.2_ran      4  1.28e-06        TGT GAGGACAGCCA AAGCTGAGCG
+ENSMUST00000295654.1_ran     13  2.43e-06 TTGGATTTCT GAAGACAGCCA CAAGAACAGA
+ENSMUST00000238570.2_ran     29  3.39e-06 GAGGACCTGC GCGGACAGCGA CTTCACCTGT
+ENSMUST00000238570.2_ran     14  3.39e-06 GAGGACCTGC GCGGACAGCGA CTTCACCTGT
+ENSMUST00000155703.2_ran      9  3.99e-06   CTTTCTCT GCAGACAGTGA TGACGACCAC
+ENSMUST00000177281.8_ran      2  3.99e-06          G GCAGACAGTGA GCTGGACTGG
+ENSMUST00000177281.8_ran     37  3.99e-06 CCAGGCTCAG GCAGACAGTGA GCT       
+ENSMUST00000216073.2_ran     16  6.94e-06 AAGTGAGTTC CAGGACAGCCA GGGCTACACA
+ENSMUST00000125789.2_ran     40  6.94e-06 AAGTGAGTTC CAGGACAGCCA           
+ENSMUST00000127154.2_ran     34  9.15e-06 AGGAAAGGAG GAAGCCAGTCA TGGCCT    
+ENSMUST00000151510.2_ran     26  1.71e-05 CTGTTTCAGG CAGGCCAGCCA TGAAAGGGTA
+ENSMUST00000146268.8_ran      4  1.71e-05        TCA GAGGAGAGTGA GAGGATCCAG
+ENSMUST00000207769.2_ran     38  2.76e-05 CACTGGCTAG GAAGCCAGACA AG        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000166952.8_ran          3.3e-07  2_[+7]_37
+ENSMUST00000143506.8_ran          3.3e-07  35_[+7]_4
+ENSMUST00000230249.2_ran          1.3e-06  3_[+7]_36
+ENSMUST00000295654.1_ran          2.4e-06  12_[+7]_27
+ENSMUST00000238570.2_ran          3.4e-06  28_[+7]_11
+ENSMUST00000238570.2_ran          3.4e-06  13_[+7]_26
+ENSMUST00000155703.2_ran            4e-06  8_[+7]_31
+ENSMUST00000177281.8_ran            4e-06  1_[+7]_38
+ENSMUST00000177281.8_ran            4e-06  36_[+7]_3
+ENSMUST00000216073.2_ran          6.9e-06  15_[+7]_24
+ENSMUST00000125789.2_ran          6.9e-06  39_[+7]
+ENSMUST00000127154.2_ran          9.1e-06  33_[+7]_6
+ENSMUST00000151510.2_ran          1.7e-05  25_[+7]_14
+ENSMUST00000146268.8_ran          1.7e-05  3_[+7]_36
+ENSMUST00000207769.2_ran          2.8e-05  37_[+7]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 7 width=11 seqs=15
+ENSMUST00000166952.8_ran (    3) GAGGACAGTGA  1 
+ENSMUST00000143506.8_ran (   36) GAGGACAGTGA  1 
+ENSMUST00000230249.2_ran (    4) GAGGACAGCCA  1 
+ENSMUST00000295654.1_ran (   13) GAAGACAGCCA  1 
+ENSMUST00000238570.2_ran (   29) GCGGACAGCGA  1 
+ENSMUST00000238570.2_ran (   14) GCGGACAGCGA  1 
+ENSMUST00000155703.2_ran (    9) GCAGACAGTGA  1 
+ENSMUST00000177281.8_ran (    2) GCAGACAGTGA  1 
+ENSMUST00000177281.8_ran (   37) GCAGACAGTGA  1 
+ENSMUST00000216073.2_ran (   16) CAGGACAGCCA  1 
+ENSMUST00000125789.2_ran (   40) CAGGACAGCCA  1 
+ENSMUST00000127154.2_ran (   34) GAAGCCAGTCA  1 
+ENSMUST00000151510.2_ran (   26) CAGGCCAGCCA  1 
+ENSMUST00000146268.8_ran (    4) GAGGAGAGTGA  1 
+ENSMUST00000207769.2_ran (   38) GAAGCCAGACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 17840 bayes= 10.1397 E= 1.5e+001 
+ -1055    -29    154  -1055 
+   143     44  -1055  -1055 
+    69  -1055    113  -1055 
+ -1055  -1055    187  -1055 
+   169    -29  -1055  -1055 
+ -1055    193   -204  -1055 
+   201  -1055  -1055  -1055 
+ -1055  -1055    187  -1055 
+  -189     93  -1055    100 
+ -1055     93     96  -1055 
+   201  -1055  -1055  -1055 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 15 E= 1.5e+001 
+ 0.000000  0.200000  0.800000  0.000000 
+ 0.666667  0.333333  0.000000  0.000000 
+ 0.400000  0.000000  0.600000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.800000  0.200000  0.000000  0.000000 
+ 0.000000  0.933333  0.066667  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.066667  0.466667  0.000000  0.466667 
+ 0.000000  0.466667  0.533333  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 7 regular expression
+--------------------------------------------------------------------------------
+[GC][AC][GA]G[AC]CAG[CT][GC]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time 101.42 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  8 MEME	width =  15  sites =   3  llr = 64  E-value = 9.1e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 8 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a:::a:aa::a:a
+pos.-specific     C  aa:a:a::::aa:::
+probability       G  :::::::::::::::
+matrix            T  ::::a::a:::::a:
+
+         bits    2.1 ***************
+                 1.9 ***************
+                 1.7 ***************
+                 1.5 ***************
+Relative         1.3 ***************
+Entropy          1.0 ***************
+(30.6 bits)      0.8 ***************
+                 0.6 ***************
+                 0.4 ***************
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           CCACTCATAACCATA
+consensus                           
+sequence                            
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000246013.1_ran     36  6.29e-10 GATTGGTTGT CCACTCATAACCATA           
+ENSMUST00000246013.1_ran      1  6.29e-10          . CCACTCATAACCATA AGATAATTAA
+ENSMUST00000245734.1_ran     29  6.29e-10 GATTGGTTGT CCACTCATAACCATA AGATAAT   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000246013.1_ran          6.3e-10  35_[+8]
+ENSMUST00000246013.1_ran          6.3e-10  [+8]_35
+ENSMUST00000245734.1_ran          6.3e-10  28_[+8]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 8 width=15 seqs=3
+ENSMUST00000246013.1_ran (   36) CCACTCATAACCATA  1 
+ENSMUST00000246013.1_ran (    1) CCACTCATAACCATA  1 
+ENSMUST00000245734.1_ran (   29) CCACTCATAACCATA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 12.0445 E= 9.1e+001 
+  -823    203   -823   -823 
+  -823    203   -823   -823 
+   201   -823   -823   -823 
+  -823    203   -823   -823 
+  -823   -823   -823    209 
+  -823    203   -823   -823 
+   201   -823   -823   -823 
+  -823   -823   -823    209 
+   201   -823   -823   -823 
+   201   -823   -823   -823 
+  -823    203   -823   -823 
+  -823    203   -823   -823 
+   201   -823   -823   -823 
+  -823   -823   -823    209 
+   201   -823   -823   -823 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 3 E= 9.1e+001 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 8 regular expression
+--------------------------------------------------------------------------------
+CCACTCATAACCATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 114.60 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF  9 MEME	width =  15  sites =  15  llr = 179  E-value = 2.2e+000
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 9 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::2:::73:174:
+pos.-specific     C  5a9a1::41::7:13
+probability       G  3::::99615a3156
+matrix            T  ::1:711::2::211
+
+         bits    2.1  * *           
+                 1.9  * *      *    
+                 1.7  ***      *    
+                 1.5  ***  *   *    
+Relative         1.3  *** **   *    
+Entropy          1.0  *******  * *  
+(17.3 bits)      0.8  ******** ***  
+                 0.6 ********* *** *
+                 0.4 ***************
+                 0.2 ***************
+                 0.0 ---------------
+
+Multilevel           CCCCTGGGAGGCAGG
+consensus            G   A  C A GTAC
+sequence             A        T     
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000230249.2_ran     21  1.03e-08 ATCACCCCCA CCCCTGGGAGGCAAC GCCCCTGTGA
+ENSMUST00000229896.2_ran     18  1.03e-08 ATCACCCCCA CCCCTGGGAGGCAAC GCCCCTGTGA
+ENSMUST00000229896.2_ran     33  1.03e-08 ATCACCCCCA CCCCTGGGAGGCAAC GCC       
+ENSMUST00000228164.2_ran     34  1.59e-07 CATGTGGATG CCCCTGGCATGGAAG AG        
+ENSMUST00000198128.2_ran     34  1.74e-07 AGTTTTCGGA GCCCAGGGAGGCAGG GA        
+ENSMUST00000155703.2_ran     21  1.90e-06 CCCGCCAGGA CCCCTTGCCAGCAGG AGTTGGACCA
+ENSMUST00000220126.2_ran      3  2.43e-06         GC GCCCCGGCAGGGAGG TGGGCGCGGC
+ENSMUST00000146847.2_ran     30  2.63e-06 CAGGGCCCCT CCCCTGGGGAGGTAG AGGCTT    
+ENSMUST00000146268.8_ran     33  3.31e-06 AGCTCAGGTG ACCCAGGCAGGCAGT CAG       
+ENSMUST00000190943.2_ran      3  3.57e-06         TG CCCCTGGCAAGAATG GAGAACGGGG
+ENSMUST00000225300.2_ran     27  4.43e-06 GCACTGAGAG ACCCTGGGGGGCACC ACACTGGAG 
+ENSMUST00000183817.2_ran     27  4.75e-06 GCCAACTTCC ACCCAGGCATGCTGC AGCGGCGCG 
+ENSMUST00000226122.2_ran     30  5.10e-06 ACCCTCAAGT GCCCTGTGATGCTGG TGGTTG    
+ENSMUST00000144931.2_ran      7  5.43e-06     GGCGGC GCCCTGGGCAGCGGG CGGCCGAGGA
+ENSMUST00000246193.2_ran     12  5.43e-06 TTTGGTCCCT CCTCTTGGAGGGAAG GTCCTCCCTG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000230249.2_ran            1e-08  20_[+9]_15
+ENSMUST00000229896.2_ran            1e-08  17_[+9]_18
+ENSMUST00000229896.2_ran            1e-08  32_[+9]_3
+ENSMUST00000228164.2_ran          1.6e-07  33_[+9]_2
+ENSMUST00000198128.2_ran          1.7e-07  33_[+9]_2
+ENSMUST00000155703.2_ran          1.9e-06  20_[+9]_15
+ENSMUST00000220126.2_ran          2.4e-06  2_[+9]_33
+ENSMUST00000146847.2_ran          2.6e-06  29_[+9]_6
+ENSMUST00000146268.8_ran          3.3e-06  32_[+9]_3
+ENSMUST00000190943.2_ran          3.6e-06  2_[+9]_33
+ENSMUST00000225300.2_ran          4.4e-06  26_[+9]_9
+ENSMUST00000183817.2_ran          4.8e-06  26_[+9]_9
+ENSMUST00000226122.2_ran          5.1e-06  29_[+9]_6
+ENSMUST00000144931.2_ran          5.4e-06  6_[+9]_29
+ENSMUST00000246193.2_ran          5.4e-06  11_[+9]_24
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 9 width=15 seqs=15
+ENSMUST00000230249.2_ran (   21) CCCCTGGGAGGCAAC  1 
+ENSMUST00000229896.2_ran (   18) CCCCTGGGAGGCAAC  1 
+ENSMUST00000229896.2_ran (   33) CCCCTGGGAGGCAAC  1 
+ENSMUST00000228164.2_ran (   34) CCCCTGGCATGGAAG  1 
+ENSMUST00000198128.2_ran (   34) GCCCAGGGAGGCAGG  1 
+ENSMUST00000155703.2_ran (   21) CCCCTTGCCAGCAGG  1 
+ENSMUST00000220126.2_ran (    3) GCCCCGGCAGGGAGG  1 
+ENSMUST00000146847.2_ran (   30) CCCCTGGGGAGGTAG  1 
+ENSMUST00000146268.8_ran (   33) ACCCAGGCAGGCAGT  1 
+ENSMUST00000190943.2_ran (    3) CCCCTGGCAAGAATG  1 
+ENSMUST00000225300.2_ran (   27) ACCCTGGGGGGCACC  1 
+ENSMUST00000183817.2_ran (   27) ACCCAGGCATGCTGC  1 
+ENSMUST00000226122.2_ran (   30) GCCCTGTGATGCTGG  1 
+ENSMUST00000144931.2_ran (    7) GCCCTGGGCAGCGGG  1 
+ENSMUST00000246193.2_ran (   12) CCTCTTGGAGGGAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 11.338 E= 2.2e+000 
+   -31    112     -4  -1055 
+ -1055    203  -1055  -1055 
+ -1055    193  -1055   -181 
+ -1055    203  -1055  -1055 
+   -31   -187  -1055    165 
+ -1055  -1055    166    -81 
+ -1055  -1055    177   -181 
+ -1055     71    113  -1055 
+   157    -88   -104  -1055 
+    11  -1055     96    -22 
+ -1055  -1055    187  -1055 
+  -189    144     -4  -1055 
+   157  -1055   -204    -22 
+    69   -187     77   -181 
+ -1055     44    113   -181 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 15 E= 2.2e+000 
+ 0.200000  0.533333  0.266667  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.933333  0.000000  0.066667 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.200000  0.066667  0.000000  0.733333 
+ 0.000000  0.000000  0.866667  0.133333 
+ 0.000000  0.000000  0.933333  0.066667 
+ 0.000000  0.400000  0.600000  0.000000 
+ 0.733333  0.133333  0.133333  0.000000 
+ 0.266667  0.000000  0.533333  0.200000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.066667  0.666667  0.266667  0.000000 
+ 0.733333  0.000000  0.066667  0.200000 
+ 0.400000  0.066667  0.466667  0.066667 
+ 0.000000  0.333333  0.600000  0.066667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 9 regular expression
+--------------------------------------------------------------------------------
+[CGA]CCC[TA]GG[GC]A[GAT]G[CG][AT][GA][GC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 127.41 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF 10 MEME	width =  15  sites =  21  llr = 220  E-value = 2.7e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif 10 Description
+--------------------------------------------------------------------------------
+Simplified        A  31::4::::::::::
+pos.-specific     C  :1:312::21:2:23
+probability       G  272726:a:467:4:
+matrix            T  518:22a:854:a47
+
+         bits    2.1       *     *  
+                 1.9       **    *  
+                 1.7       **    *  
+                 1.5       **    *  
+Relative         1.3   *   ***   * *
+Entropy          1.0   **  ***   * *
+(15.1 bits)      0.8   **  *** *** *
+                 0.6  ***  ******* *
+                 0.4 **** **********
+                 0.2 **** **********
+                 0.0 ---------------
+
+Multilevel           TGTGAGTGTTGGTGT
+consensus            A GCG   CGTC TC
+sequence             G   T          
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+ENSMUST00000246193.2_ran      9  1.90e-08   AGAAGGGG TGTGAGTGTGTGTGT GGGGGGTCTA
+ENSMUST00000137435.2_ran      3  1.53e-07         GG TGTCTGTGTGGGTTT AGCTAAGGCA
+ENSMUST00000162282.2_ran     28  1.53e-07 CTGGGGATAG GGTCAGTGTTGGTGT CTTTAGAC  
+ENSMUST00000226745.2_ran      2  3.86e-07          A AGTGTGTGTTGCTTT TACATTTGTC
+ENSMUST00000149780.2_ran      2  8.32e-07          G TGTGTGTGTCTGTGT CTGTGTCTAT
+ENSMUST00000150413.2_ran      1  1.87e-06          . AGGGGGTGTGGGTGT AGGGAGAGAA
+ENSMUST00000150413.2_ran     36  1.87e-06 GCGAGCTCCG AGGGGGTGTGGGTGT           
+ENSMUST00000155703.2_ran     28  3.35e-06 CGGACAGCGC GGGGAGTGCTGGTGT GTGAACCC  
+ENSMUST00000136249.2_ran      8  3.35e-06    CCTTGTG TGTGTGTGCTGCTTC TCTGATTGGC
+ENSMUST00000127810.2_ran     26  4.17e-06 AGAAGCATTT GGTGAGTGTCTGTCT GTGGCTGAAG
+ENSMUST00000198030.2_ran     36  6.29e-06 AACTGGATTT TGTCGTTGTTGCTGC           
+ENSMUST00000149780.2_ran     28  8.37e-06 AAAGACAGTT TATGCTTGTGGGTTT GGTCGGAG  
+ENSMUST00000144931.2_ran      7  1.19e-05     ACAAGC TCTCCGTGTTTGTTC AATGTAACAT
+ENSMUST00000120539.8_ran     26  1.52e-05 TATGTATGCA TGTGAGTGTTCTTGT CCTGATGTTG
+ENSMUST00000152623.2_ran     16  1.77e-05 GGGACAATTT TTGCATTGTTTGTTT TTGAGATGGG
+ENSMUST00000120539.8_ran     35  1.91e-05 CGATTGCAGC AGTGGCTGCTGCTGC G         
+ENSMUST00000176066.8_ran      7  2.37e-05     TCCGGA AGTGGCTGCTTCTTC AGCATGCTGG
+ENSMUST00000176066.8_ran     35  2.90e-05 AGAAGGCGTG TATCCCTGTGGGTCT G         
+ENSMUST00000226366.2_ran     26  3.29e-05 GTGGTTGGGT GGGGAATGTGGGTTC TCTTTAGATA
+ENSMUST00000132380.2_ran     30  4.40e-05 TGTGGACCTT ATTGATTGCTTGTCC CAGAAA    
+ENSMUST00000246193.2_ran     36  4.40e-05 GGTCCTCCCT GCTCTCTGTGTGTCT           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000246193.2_ran          1.9e-08  8_[+10]_27
+ENSMUST00000137435.2_ran          1.5e-07  2_[+10]_33
+ENSMUST00000162282.2_ran          1.5e-07  27_[+10]_8
+ENSMUST00000226745.2_ran          3.9e-07  1_[+10]_34
+ENSMUST00000149780.2_ran          8.3e-07  1_[+10]_34
+ENSMUST00000150413.2_ran          1.9e-06  [+10]_35
+ENSMUST00000150413.2_ran          1.9e-06  35_[+10]
+ENSMUST00000155703.2_ran          3.4e-06  27_[+10]_8
+ENSMUST00000136249.2_ran          3.4e-06  7_[+10]_28
+ENSMUST00000127810.2_ran          4.2e-06  25_[+10]_10
+ENSMUST00000198030.2_ran          6.3e-06  35_[+10]
+ENSMUST00000149780.2_ran          8.4e-06  27_[+10]_8
+ENSMUST00000144931.2_ran          1.2e-05  6_[+10]_29
+ENSMUST00000120539.8_ran          1.5e-05  25_[+10]_10
+ENSMUST00000152623.2_ran          1.8e-05  15_[+10]_20
+ENSMUST00000120539.8_ran          1.9e-05  34_[+10]_1
+ENSMUST00000176066.8_ran          2.4e-05  6_[+10]_29
+ENSMUST00000176066.8_ran          2.9e-05  34_[+10]_1
+ENSMUST00000226366.2_ran          3.3e-05  25_[+10]_10
+ENSMUST00000132380.2_ran          4.4e-05  29_[+10]_6
+ENSMUST00000246193.2_ran          4.4e-05  35_[+10]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF 10 width=15 seqs=21
+ENSMUST00000246193.2_ran (    9) TGTGAGTGTGTGTGT  1 
+ENSMUST00000137435.2_ran (    3) TGTCTGTGTGGGTTT  1 
+ENSMUST00000162282.2_ran (   28) GGTCAGTGTTGGTGT  1 
+ENSMUST00000226745.2_ran (    2) AGTGTGTGTTGCTTT  1 
+ENSMUST00000149780.2_ran (    2) TGTGTGTGTCTGTGT  1 
+ENSMUST00000150413.2_ran (    1) AGGGGGTGTGGGTGT  1 
+ENSMUST00000150413.2_ran (   36) AGGGGGTGTGGGTGT  1 
+ENSMUST00000155703.2_ran (   28) GGGGAGTGCTGGTGT  1 
+ENSMUST00000136249.2_ran (    8) TGTGTGTGCTGCTTC  1 
+ENSMUST00000127810.2_ran (   26) GGTGAGTGTCTGTCT  1 
+ENSMUST00000198030.2_ran (   36) TGTCGTTGTTGCTGC  1 
+ENSMUST00000149780.2_ran (   28) TATGCTTGTGGGTTT  1 
+ENSMUST00000144931.2_ran (    7) TCTCCGTGTTTGTTC  1 
+ENSMUST00000120539.8_ran (   26) TGTGAGTGTTCTTGT  1 
+ENSMUST00000152623.2_ran (   16) TTGCATTGTTTGTTT  1 
+ENSMUST00000120539.8_ran (   35) AGTGGCTGCTGCTGC  1 
+ENSMUST00000176066.8_ran (    7) AGTGGCTGCTTCTTC  1 
+ENSMUST00000176066.8_ran (   35) TATCCCTGTGGGTCT  1 
+ENSMUST00000226366.2_ran (   26) GGGGAATGTGGGTTC  1 
+ENSMUST00000132380.2_ran (   30) ATTGATTGCTTGTCC  1 
+ENSMUST00000246193.2_ran (   36) GCTCTCTGTGTGTCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 16056 bayes= 10.5639 E= 2.7e+002 
+    21  -1104    -20    103 
+  -138   -136    138   -129 
+ -1104  -1104    -20    171 
+ -1104     44    128  -1104 
+    62    -78    -20      3 
+  -237    -36    106    -29 
+ -1104  -1104  -1104    210 
+ -1104  -1104    187  -1104 
+ -1104     -4  -1104    171 
+ -1104   -136     47    116 
+ -1104   -236    106     71 
+ -1104     -4    138   -229 
+ -1104  -1104  -1104    210 
+ -1104    -36     64     71 
+ -1104     44  -1104    151 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 21 E= 2.7e+002 
+ 0.285714  0.000000  0.238095  0.476190 
+ 0.095238  0.095238  0.714286  0.095238 
+ 0.000000  0.000000  0.238095  0.761905 
+ 0.000000  0.333333  0.666667  0.000000 
+ 0.380952  0.142857  0.238095  0.238095 
+ 0.047619  0.190476  0.571429  0.190476 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.238095  0.000000  0.761905 
+ 0.000000  0.095238  0.380952  0.523810 
+ 0.000000  0.047619  0.571429  0.380952 
+ 0.000000  0.238095  0.714286  0.047619 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.190476  0.428571  0.380952 
+ 0.000000  0.333333  0.000000  0.666667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif 10 regular expression
+--------------------------------------------------------------------------------
+[TAG]G[TG][GC][AGT]GTG[TC][TG][GT][GC]T[GT][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 140.41 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ENSMUST00000207394.2_ran         2.76e-01  19_[+3(3.61e-05)]_16
+ENSMUST00000152623.2_ran         7.42e-01  50
+ENSMUST00000152623.2_ran         1.28e-02  15_[+10(1.77e-05)]_20
+ENSMUST00000152623.2_ran         8.68e-01  50
+ENSMUST00000152623.2_ran         3.84e-01  50
+ENSMUST00000152623.2_ran         4.30e-01  50
+ENSMUST00000128262.2_ran         1.09e-01  50
+ENSMUST00000128262.2_ran         5.58e-02  11_[+1(1.20e-05)]_24
+ENSMUST00000128262.2_ran         9.42e-01  50
+ENSMUST00000128262.2_ran         1.26e-01  50
+ENSMUST00000128262.2_ran         1.04e-01  26_[+1(1.20e-05)]_9
+ENSMUST00000245018.1_ran         9.48e-01  50
+ENSMUST00000238570.2_ran         2.35e-02  13_[+7(3.39e-06)]_26
+ENSMUST00000238570.2_ran         3.87e-03  13_[+2(5.00e-06)]_22
+ENSMUST00000238570.2_ran         8.28e-01  50
+ENSMUST00000238570.2_ran         1.34e-02  28_[+7(3.39e-06)]_11
+ENSMUST00000238570.2_ran         8.41e-02  50
+ENSMUST00000124805.2_ran         2.64e-01  50
+ENSMUST00000176463.2_ran         2.45e-02  50
+ENSMUST00000176463.2_ran         7.95e-01  50
+ENSMUST00000176463.2_ran         4.68e-01  50
+ENSMUST00000238496.2_ran         9.90e-01  50
+ENSMUST00000026917.10_ra         3.42e-01  50
+ENSMUST00000026917.10_ra         6.89e-01  50
+ENSMUST00000026917.10_ra         1.68e-01  50
+ENSMUST00000026917.10_ra         5.07e-02  50
+ENSMUST00000026917.10_ra         4.58e-02  50
+ENSMUST00000189818.2_ran         1.28e-01  50
+ENSMUST00000205439.2_ran         7.16e-01  50
+ENSMUST00000205439.2_ran         6.42e-01  50
+ENSMUST00000205439.2_ran         3.67e-01  50
+ENSMUST00000205439.2_ran         9.81e-01  50
+ENSMUST00000205439.2_ran         1.66e-01  50
+ENSMUST00000148248.3_ran         9.80e-02  50
+ENSMUST00000148248.3_ran         5.47e-01  50
+ENSMUST00000148248.3_ran         3.96e-01  50
+ENSMUST00000148248.3_ran         5.27e-01  50
+ENSMUST00000199717.2_ran         1.65e-02  50
+ENSMUST00000172781.8_ran         3.56e-02  50
+ENSMUST00000172781.8_ran         9.01e-01  50
+ENSMUST00000172781.8_ran         1.22e-01  11_[+1(4.49e-05)]_24
+ENSMUST00000172781.8_ran         7.07e-01  50
+ENSMUST00000172781.8_ran         6.41e-02  50
+ENSMUST00000176297.2_ran         2.26e-02  5_[+6(5.04e-06)]_35
+ENSMUST00000123631.2_ran         1.20e-01  50
+ENSMUST00000207769.2_ran         2.21e-02  39_[+6(5.94e-05)]_1
+ENSMUST00000207769.2_ran         2.15e-01  50
+ENSMUST00000207769.2_ran         2.29e-02  37_[+7(2.76e-05)]_2
+ENSMUST00000207769.2_ran         9.41e-02  20_[+3(4.83e-07)]_15
+ENSMUST00000207769.2_ran         3.61e-01  4_[+1(6.21e-05)]_31
+ENSMUST00000127154.2_ran         3.23e-02  33_[+7(9.15e-06)]_6
+ENSMUST00000136249.2_ran         1.10e-01  50
+ENSMUST00000136249.2_ran         3.61e-02  50
+ENSMUST00000136249.2_ran         2.51e-01  50
+ENSMUST00000136249.2_ran         3.81e-05  7_[+10(3.35e-06)]_28
+ENSMUST00000111228.2_ran         4.85e-01  50
+ENSMUST00000111228.2_ran         5.15e-01  50
+ENSMUST00000111228.2_ran         2.90e-01  50
+ENSMUST00000111228.2_ran         8.09e-01  50
+ENSMUST00000111228.2_ran         1.24e-01  50
+ENSMUST00000246193.2_ran         2.82e-02  8_[+10(1.90e-08)]_27
+ENSMUST00000246193.2_ran         6.39e-02  50
+ENSMUST00000246193.2_ran         8.05e-04  11_[+9(5.43e-06)]_9_[+10(4.40e-05)]
+ENSMUST00000246193.2_ran         1.25e-01  28_[+3(5.25e-05)]_7
+ENSMUST00000246193.2_ran         2.28e-01  50
+ENSMUST00000228164.2_ran         2.81e-03  33_[+9(1.59e-07)]_2
+ENSMUST00000228164.2_ran         1.82e-01  50
+ENSMUST00000228164.2_ran         8.17e-02  34_[+3(1.30e-05)]_1
+ENSMUST00000228164.2_ran         6.89e-01  50
+ENSMUST00000295654.1_ran         2.06e-02  12_[+7(2.43e-06)]_27
+ENSMUST00000151832.2_ran         4.18e-03  33_[+6(2.61e-05)]_7
+ENSMUST00000220126.2_ran         1.99e-02  2_[+9(2.43e-06)]_33
+ENSMUST00000177103.8_ran         1.48e-01  50
+ENSMUST00000172208.2_ran         3.68e-02  12_[+1(6.71e-05)]_23
+ENSMUST00000146371.8_ran         9.60e-01  50
+ENSMUST00000146371.8_ran         4.23e-03  8_[+3(1.29e-06)]_27
+ENSMUST00000146371.8_ran         5.78e-01  50
+ENSMUST00000146371.8_ran         1.53e-02  17_[+6(2.64e-06)]_23
+ENSMUST00000146371.8_ran         9.76e-02  5_[+8(3.67e-05)]_30
+ENSMUST00000198128.2_ran         9.73e-01  50
+ENSMUST00000198128.2_ran         1.87e-02  33_[+9(1.74e-07)]_2
+ENSMUST00000229896.2_ran         7.64e-01  50
+ENSMUST00000229896.2_ran         6.45e-02  50
+ENSMUST00000229896.2_ran         3.28e-04  7_[+3(7.46e-09)]_28
+ENSMUST00000229896.2_ran         2.88e-09  4_[+6(4.70e-05)]_1_[+3(5.62e-07)]_2_\
+    [+9(1.03e-08)]_3
+ENSMUST00000229896.2_ran         1.31e-07  [+3(5.62e-07)]_2_[+9(1.03e-08)]_18
+ENSMUST00000207271.2_ran         2.27e-01  50
+ENSMUST00000209916.2_ran         1.50e-02  20_[+1(1.20e-05)]_15
+ENSMUST00000174434.8_ran         1.85e-01  50
+ENSMUST00000174434.8_ran         4.83e-03  3_[+3(6.96e-05)]_32
+ENSMUST00000174434.8_ran         6.95e-01  50
+ENSMUST00000174434.8_ran         2.29e-02  28_[+6(1.23e-05)]_12
+ENSMUST00000174434.8_ran         2.88e-01  14_[+1(7.81e-05)]_21
+ENSMUST00000226122.2_ran         1.24e-01  29_[+9(5.10e-06)]_6
+ENSMUST00000226122.2_ran         1.33e-01  50
+ENSMUST00000226122.2_ran         9.79e-01  50
+ENSMUST00000226122.2_ran         1.40e-02  10_[+3(1.30e-05)]_25
+ENSMUST00000226122.2_ran         2.02e-01  50
+ENSMUST00000190943.2_ran         1.62e-02  2_[+9(3.57e-06)]_33
+ENSMUST00000198506.2_ran         5.72e-01  50
+ENSMUST00000211812.2_ran         2.51e-02  35_[+1(2.64e-05)]
+ENSMUST00000132502.2_ran         6.46e-01  50
+ENSMUST00000132502.2_ran         5.52e-01  50
+ENSMUST00000132502.2_ran         3.60e-02  50
+ENSMUST00000245442.1_ran         8.61e-01  50
+ENSMUST00000245442.1_ran         4.98e-03  2_[+4(8.87e-05)]_8_[+1(8.42e-05)]_\
+    11
+ENSMUST00000245442.1_ran         3.29e-02  50
+ENSMUST00000124006.2_ran         1.92e-01  30_[+1(1.63e-05)]_5
+ENSMUST00000124006.2_ran         1.82e-01  50
+ENSMUST00000150592.2_ran         1.08e-01  50
+ENSMUST00000225300.2_ran         4.09e-04  20_[+4(1.37e-06)]_16
+ENSMUST00000225300.2_ran         6.32e-01  50
+ENSMUST00000225300.2_ran         2.97e-02  50
+ENSMUST00000225300.2_ran         1.56e-01  26_[+9(4.43e-06)]_9
+ENSMUST00000225300.2_ran         2.15e-01  50
+ENSMUST00000169644.2_ran         8.84e-01  50
+ENSMUST00000169644.2_ran         8.26e-02  50
+ENSMUST00000169644.2_ran         4.05e-02  9_[+3(4.88e-05)]_26
+ENSMUST00000188008.7_ran         1.59e-03  28_[+1(7.67e-08)]_7
+ENSMUST00000188008.7_ran         8.66e-01  50
+ENSMUST00000188008.7_ran         5.90e-01  50
+ENSMUST00000154834.2_ran         1.72e-01  3_[+3(1.43e-05)]_32
+ENSMUST00000154834.2_ran         5.34e-01  50
+ENSMUST00000154834.2_ran         2.14e-02  5_[+3(1.08e-05)]_30
+ENSMUST00000154834.2_ran         9.35e-01  50
+ENSMUST00000154834.2_ran         4.80e-01  50
+ENSMUST00000125036.8_ran         1.21e-01  50
+ENSMUST00000156313.8_ran         6.43e-01  50
+ENSMUST00000224549.2_ran         6.62e-03  4_[+1(4.27e-06)]_31
+ENSMUST00000224549.2_ran         5.00e-02  24_[+1(4.27e-06)]_11
+ENSMUST00000177281.8_ran         1.03e-04  36_[+7(3.99e-06)]_3
+ENSMUST00000177281.8_ran         2.15e-04  1_[+7(3.99e-06)]_3_[+2(2.14e-07)]_\
+    20
+ENSMUST00000177281.8_ran         3.61e-03  14_[+1(1.07e-05)]_21
+ENSMUST00000211874.2_ran         4.50e-02  21_[+1(2.64e-05)]_14
+ENSMUST00000211874.2_ran         6.45e-02  50
+ENSMUST00000146847.2_ran         1.79e-01  50
+ENSMUST00000146847.2_ran         1.57e-02  4_[+1(5.29e-05)]_31
+ENSMUST00000146847.2_ran         4.44e-02  29_[+9(2.63e-06)]_6
+ENSMUST00000146847.2_ran         9.63e-01  50
+ENSMUST00000146847.2_ran         6.01e-02  50
+ENSMUST00000226366.2_ran         7.07e-05  35_[+4(4.02e-08)]_1
+ENSMUST00000226366.2_ran         7.82e-05  [+4(4.02e-08)]_11_[+10(3.29e-05)]_\
+    10
+ENSMUST00000134153.2_ran         4.67e-02  50
+ENSMUST00000134153.2_ran         1.26e-03  17_[+3(1.30e-05)]_18
+ENSMUST00000140562.2_ran         5.97e-01  50
+ENSMUST00000145226.9_ran         1.07e-01  50
+ENSMUST00000229939.2_ran         3.44e-02  50
+ENSMUST00000229939.2_ran         1.90e-02  11_[+5(6.45e-05)]_24
+ENSMUST00000229939.2_ran         2.42e-01  14_[+1(6.12e-06)]_21
+ENSMUST00000229939.2_ran         3.53e-04  7_[+1(4.87e-05)]_12_[+4(1.21e-06)]_\
+    2
+ENSMUST00000229939.2_ran         5.07e-02  50
+ENSMUST00000125789.2_ran         4.65e-01  50
+ENSMUST00000125789.2_ran         5.51e-03  39_[+7(6.94e-06)]
+ENSMUST00000173997.2_ran         2.93e-01  50
+ENSMUST00000155437.2_ran         1.54e-01  24_[+1(2.64e-05)]_11
+ENSMUST00000141370.8_ran         7.57e-01  50
+ENSMUST00000141370.8_ran         7.46e-01  50
+ENSMUST00000208095.2_ran         7.13e-01  50
+ENSMUST00000208095.2_ran         9.41e-01  50
+ENSMUST00000190131.2_ran         5.36e-01  50
+ENSMUST00000190131.2_ran         6.79e-01  50
+ENSMUST00000190131.2_ran         4.18e-02  50
+ENSMUST00000190131.2_ran         3.47e-01  50
+ENSMUST00000190131.2_ran         5.97e-02  10_[+3(1.08e-05)]_25
+ENSMUST00000216073.2_ran         1.30e-01  15_[+7(6.94e-06)]_24
+ENSMUST00000216073.2_ran         1.27e-01  50
+ENSMUST00000162282.2_ran         4.23e-03  27_[+10(1.53e-07)]_8
+ENSMUST00000209390.2_ran         4.42e-01  50
+ENSMUST00000309423.1_ran         1.13e-01  50
+ENSMUST00000212595.2_ran         3.04e-02  27_[+1(7.25e-05)]_8
+ENSMUST00000212595.2_ran         6.71e-02  50
+ENSMUST00000212595.2_ran         5.99e-04  29_[+3(1.29e-06)]_6
+ENSMUST00000212595.2_ran         1.67e-01  50
+ENSMUST00000212595.2_ran         9.48e-01  50
+ENSMUST00000137435.2_ran         4.33e-01  50
+ENSMUST00000137435.2_ran         5.42e-02  50
+ENSMUST00000137435.2_ran         2.25e-03  2_[+10(1.53e-07)]_33
+ENSMUST00000137435.2_ran         5.14e-02  22_[+3(1.43e-05)]_13
+ENSMUST00000137435.2_ran         5.80e-01  50
+ENSMUST00000143506.8_ran         6.56e-01  50
+ENSMUST00000143506.8_ran         1.97e-04  11_[+2(3.03e-06)]_9_[+7(3.30e-07)]_\
+    4
+ENSMUST00000143506.8_ran         4.89e-04  12_[+1(4.27e-06)]_23
+ENSMUST00000143506.8_ran         1.03e-01  50
+ENSMUST00000143506.8_ran         8.28e-01  50
+ENSMUST00000206095.2_ran         1.70e-02  11_[+3(3.61e-05)]_24
+ENSMUST00000206095.2_ran         3.92e-01  50
+ENSMUST00000206095.2_ran         5.97e-01  50
+ENSMUST00000206095.2_ran         9.79e-01  50
+ENSMUST00000206095.2_ran         7.60e-01  50
+ENSMUST00000198984.5_ran         1.05e-01  50
+ENSMUST00000198984.5_ran         1.99e-03  34_[+1(1.20e-05)]_1
+ENSMUST00000140838.2_ran         2.96e-01  50
+ENSMUST00000149628.2_ran         9.96e-01  50
+ENSMUST00000217121.2_ran         1.32e-02  50
+ENSMUST00000217121.2_ran         7.31e-01  50
+ENSMUST00000217121.2_ran         1.03e-03  16_[+4(1.29e-07)]_20
+ENSMUST00000217121.2_ran         8.19e-02  50
+ENSMUST00000217121.2_ran         8.17e-01  50
+ENSMUST00000120539.8_ran         1.09e-01  50
+ENSMUST00000120539.8_ran         5.06e-02  34_[+10(1.91e-05)]_1
+ENSMUST00000120539.8_ran         8.90e-02  25_[+10(1.52e-05)]_10
+ENSMUST00000120539.8_ran         8.35e-01  50
+ENSMUST00000120539.8_ran         2.62e-01  50
+ENSMUST00000341511.1_ran         8.15e-02  50
+ENSMUST00000135216.3_ran         3.26e-03  25_[+4(1.00e-06)]_11
+ENSMUST00000135216.3_ran         8.20e-01  50
+ENSMUST00000149780.2_ran         1.51e-01  50
+ENSMUST00000149780.2_ran         6.24e-01  50
+ENSMUST00000149780.2_ran         1.71e-02  27_[+10(8.37e-06)]_8
+ENSMUST00000149780.2_ran         2.27e-03  1_[+10(8.32e-07)]_34
+ENSMUST00000149780.2_ran         1.53e-01  50
+ENSMUST00000134919.2_ran         3.73e-01  50
+ENSMUST00000140215.2_ran         2.61e-05  2_[+5(1.18e-09)]_33
+ENSMUST00000208888.2_ran         7.84e-01  50
+ENSMUST00000208888.2_ran         4.37e-02  4_[+1(2.03e-07)]_31
+ENSMUST00000208888.2_ran         4.31e-02  33_[+1(2.03e-07)]_2
+ENSMUST00000208888.2_ran         5.30e-01  50
+ENSMUST00000208888.2_ran         1.02e-01  50
+ENSMUST00000040081.7_ran         1.28e-02  28_[+3(2.22e-05)]_7
+ENSMUST00000183817.2_ran         2.70e-01  50
+ENSMUST00000183817.2_ran         6.96e-03  23_[+3(1.08e-05)]_12
+ENSMUST00000183817.2_ran         8.83e-01  50
+ENSMUST00000183817.2_ran         3.95e-02  26_[+9(4.75e-06)]_9
+ENSMUST00000183817.2_ran         2.56e-03  50
+ENSMUST00000198030.2_ran         2.37e-01  50
+ENSMUST00000198030.2_ran         8.18e-01  50
+ENSMUST00000198030.2_ran         2.46e-02  35_[+10(6.29e-06)]
+ENSMUST00000198030.2_ran         7.47e-05  22_[+2(9.66e-07)]_13
+ENSMUST00000198030.2_ran         6.80e-01  50
+ENSMUST00000148536.2_ran         1.25e-05  8_[+5(7.94e-08)]_27
+ENSMUST00000148536.2_ran         1.38e-01  32_[+1(1.99e-05)]_3
+ENSMUST00000148536.2_ran         2.71e-03  18_[+6(3.15e-05)]_22
+ENSMUST00000148536.2_ran         6.56e-02  14_[+1(1.07e-05)]_21
+ENSMUST00000148536.2_ran         6.68e-01  50
+ENSMUST00000155682.2_ran         2.95e-01  50
+ENSMUST00000146268.8_ran         1.33e-01  50
+ENSMUST00000146268.8_ran         1.86e-03  3_[+7(1.71e-05)]_18_[+9(3.31e-06)]_\
+    3
+ENSMUST00000146268.8_ran         7.18e-01  50
+ENSMUST00000146268.8_ran         2.43e-01  50
+ENSMUST00000146268.8_ran         8.06e-04  39_[+6(5.04e-06)]_1
+ENSMUST00000150413.2_ran         2.82e-02  35_[+10(1.87e-06)]
+ENSMUST00000150413.2_ran         2.22e-01  50
+ENSMUST00000150413.2_ran         9.51e-02  [+10(1.87e-06)]_35
+ENSMUST00000150413.2_ran         2.65e-01  13_[+1(8.42e-05)]_22
+ENSMUST00000150413.2_ran         2.93e-01  50
+ENSMUST00000155174.8_ran         1.20e-01  50
+ENSMUST00000155174.8_ran         3.47e-02  50
+ENSMUST00000156010.2_ran         7.20e-01  50
+ENSMUST00000156010.2_ran         6.00e-01  50
+ENSMUST00000156010.2_ran         6.11e-05  21_[+6(6.40e-06)]_3_[+2(4.71e-06)]_\
+    1
+ENSMUST00000156010.2_ran         6.54e-01  50
+ENSMUST00000156010.2_ran         3.15e-01  23_[+6(5.51e-05)]_17
+ENSMUST00000155703.2_ran         1.98e-02  8_[+7(3.99e-06)]_31
+ENSMUST00000155703.2_ran         1.80e-02  20_[+9(1.90e-06)]_15
+ENSMUST00000155703.2_ran         5.14e-04  27_[+10(3.35e-06)]_8
+ENSMUST00000150588.2_ran         6.61e-01  50
+ENSMUST00000147761.8_ran         4.43e-01  50
+ENSMUST00000147761.8_ran         5.64e-01  50
+ENSMUST00000147761.8_ran         2.55e-01  50
+ENSMUST00000147761.8_ran         5.81e-01  50
+ENSMUST00000147761.8_ran         6.99e-01  50
+ENSMUST00000295647.1_ran         6.65e-01  50
+ENSMUST00000295647.1_ran         9.52e-01  50
+ENSMUST00000167909.2_ran         1.09e-02  33_[+1(1.47e-05)]_2
+ENSMUST00000167909.2_ran         1.16e-01  50
+ENSMUST00000167909.2_ran         2.87e-01  50
+ENSMUST00000167909.2_ran         9.75e-01  50
+ENSMUST00000226745.2_ran         1.28e-05  1_[+10(3.86e-07)]_34
+ENSMUST00000226745.2_ran         2.09e-01  50
+ENSMUST00000226745.2_ran         6.46e-01  50
+ENSMUST00000226745.2_ran         3.26e-01  50
+ENSMUST00000226745.2_ran         7.86e-03  25_[+6(4.47e-05)]_15
+ENSMUST00000143507.2_ran         9.11e-01  50
+ENSMUST00000143507.2_ran         1.14e-01  50
+ENSMUST00000144289.4_ran         6.96e-01  50
+ENSMUST00000108848.2_ran         7.60e-02  50
+ENSMUST00000140930.2_ran         9.86e-01  50
+ENSMUST00000140930.2_ran         4.53e-04  7_[+5(1.30e-07)]_28
+ENSMUST00000146305.8_ran         8.77e-01  50
+ENSMUST00000141268.8_ran         3.44e-01  50
+ENSMUST00000141268.8_ran         3.58e-02  50
+ENSMUST00000141268.8_ran         6.34e-01  50
+ENSMUST00000141268.8_ran         9.74e-01  50
+ENSMUST00000141268.8_ran         1.73e-01  50
+ENSMUST00000355217.1_ran         4.59e-01  50
+ENSMUST00000206495.2_ran         8.76e-02  5_[+4(1.83e-07)]_31
+ENSMUST00000206495.2_ran         1.87e-01  50
+ENSMUST00000206495.2_ran         3.32e-06  3_[+4(8.05e-07)]_21_[+7(4.85e-05)]_\
+    1
+ENSMUST00000206495.2_ran         5.09e-01  50
+ENSMUST00000206495.2_ran         3.31e-01  50
+ENSMUST00000128780.2_ran         8.52e-01  50
+ENSMUST00000172489.3_ran         9.55e-03  [+1(1.37e-07)]_35
+ENSMUST00000130456.2_ran         2.86e-01  50
+ENSMUST00000205269.2_ran         7.18e-01  50
+ENSMUST00000205269.2_ran         8.51e-01  50
+ENSMUST00000205269.2_ran         2.52e-03  [+2(1.84e-06)]_35
+ENSMUST00000205269.2_ran         6.84e-03  50
+ENSMUST00000137367.2_ran         2.88e-01  36_[+6(7.21e-05)]_4
+ENSMUST00000137367.2_ran         5.43e-03  50
+ENSMUST00000137367.2_ran         7.58e-01  50
+ENSMUST00000137367.2_ran         3.24e-02  4_[+4(3.28e-07)]_32
+ENSMUST00000137367.2_ran         6.88e-01  50
+ENSMUST00000139181.2_ran         5.23e-02  50
+ENSMUST00000176816.8_ran         7.92e-05  31_[+5(2.41e-09)]_4
+ENSMUST00000176816.8_ran         1.30e-05  14_[+5(2.41e-09)]_21
+ENSMUST00000199655.5_ran         3.06e-01  12_[+6(4.89e-05)]_28
+ENSMUST00000199655.5_ran         9.13e-01  50
+ENSMUST00000199655.5_ran         1.01e-01  50
+ENSMUST00000134087.8_ran         1.68e-01  50
+ENSMUST00000341523.1_ran         3.20e-02  22_[+6(5.94e-05)]_18
+ENSMUST00000341523.1_ran         4.34e-01  50
+ENSMUST00000230249.2_ran         2.47e-03  10_[+3(7.19e-06)]_2_[+6(5.16e-05)]_\
+    13
+ENSMUST00000230249.2_ran         1.07e-01  50
+ENSMUST00000230249.2_ran         1.06e-02  50
+ENSMUST00000230249.2_ran         1.00e-02  3_[+7(1.28e-06)]_36
+ENSMUST00000230249.2_ran         1.22e-07  3_[+3(5.62e-07)]_2_[+9(1.03e-08)]_\
+    15
+ENSMUST00000164009.2_ran         3.89e-01  50
+ENSMUST00000208129.2_ran         2.75e-01  21_[+1(9.64e-06)]_14
+ENSMUST00000208129.2_ran         6.73e-01  50
+ENSMUST00000208129.2_ran         2.93e-01  50
+ENSMUST00000186539.2_ran         2.61e-01  50
+ENSMUST00000186539.2_ran         1.14e-01  1_[+9(8.20e-05)]_34
+ENSMUST00000186539.2_ran         8.59e-01  50
+ENSMUST00000151510.2_ran         2.57e-02  25_[+7(1.71e-05)]_14
+ENSMUST00000123338.8_ran         6.99e-02  50
+ENSMUST00000123338.8_ran         7.49e-01  50
+ENSMUST00000123338.8_ran         5.56e-01  50
+ENSMUST00000123338.8_ran         1.62e-02  50
+ENSMUST00000123338.8_ran         3.05e-02  32_[+1(6.71e-05)]_3
+ENSMUST00000235109.2_ran         2.12e-01  2_[+1(1.80e-05)]_33
+ENSMUST00000247114.1_ran         1.06e-01  50
+ENSMUST00000247114.1_ran         3.48e-05  28_[+2(6.79e-09)]_7
+ENSMUST00000247114.1_ran         2.68e-01  50
+ENSMUST00000247114.1_ran         5.59e-01  50
+ENSMUST00000247114.1_ran         5.69e-02  13_[+1(1.20e-05)]_22
+ENSMUST00000150542.2_ran         1.36e-03  21_[+5(1.02e-07)]_14
+ENSMUST00000144931.2_ran         5.44e-02  6_[+10(1.19e-05)]_29
+ENSMUST00000144931.2_ran         6.11e-01  50
+ENSMUST00000144931.2_ran         1.28e-01  50
+ENSMUST00000144931.2_ran         8.39e-01  50
+ENSMUST00000144931.2_ran         5.30e-02  6_[+9(5.43e-06)]_29
+ENSMUST00000166952.8_ran         1.92e-04  2_[+7(3.30e-07)]_37
+ENSMUST00000186575.2_ran         9.15e-01  50
+ENSMUST00000186575.2_ran         2.56e-02  26_[+1(3.46e-05)]_9
+ENSMUST00000186575.2_ran         6.56e-04  [+2(5.09e-07)]_35
+ENSMUST00000186575.2_ran         9.97e-01  50
+ENSMUST00000186575.2_ran         7.70e-01  50
+ENSMUST00000147439.8_ran         4.71e-01  50
+ENSMUST00000120051.2_ran         1.81e-02  14_[+5(4.34e-05)]_21
+ENSMUST00000167883.2_ran         9.86e-01  50
+ENSMUST00000167883.2_ran         7.35e-01  50
+ENSMUST00000167883.2_ran         2.29e-03  5_[+1(2.19e-05)]_30
+ENSMUST00000167883.2_ran         4.89e-01  50
+ENSMUST00000167883.2_ran         3.47e-02  23_[+4(5.10e-07)]_13
+ENSMUST00000139617.2_ran         3.29e-02  50
+ENSMUST00000270333.1_ran         5.59e-03  39_[+6(6.40e-06)]_1
+ENSMUST00000270333.1_ran         1.42e-01  50
+ENSMUST00000270333.1_ran         4.90e-01  50
+ENSMUST00000270333.1_ran         1.17e-01  50
+ENSMUST00000270333.1_ran         3.97e-01  50
+ENSMUST00000135647.2_ran         1.79e-04  13_[+2(1.58e-06)]_22
+ENSMUST00000142659.2_ran         1.76e-04  2_[+3(7.46e-05)]_4_[+6(3.15e-05)]_\
+    19
+ENSMUST00000142659.2_ran         1.55e-01  50
+ENSMUST00000142659.2_ran         4.44e-02  50
+ENSMUST00000142659.2_ran         3.39e-01  50
+ENSMUST00000245734.1_ran         9.23e-01  50
+ENSMUST00000245734.1_ran         6.74e-06  28_[+8(6.29e-10)]_7
+ENSMUST00000224148.2_ran         3.81e-01  50
+ENSMUST00000224148.2_ran         3.59e-02  10_[+6(2.17e-05)]_30
+ENSMUST00000224148.2_ran         1.12e-01  50
+ENSMUST00000224148.2_ran         9.48e-01  50
+ENSMUST00000224148.2_ran         2.70e-02  50
+ENSMUST00000109724.2_ran         1.72e-01  50
+ENSMUST00000109724.2_ran         2.84e-03  29_[+3(5.83e-06)]_6
+ENSMUST00000109724.2_ran         4.69e-01  50
+ENSMUST00000109724.2_ran         2.45e-01  50
+ENSMUST00000109724.2_ran         2.08e-01  50
+ENSMUST00000211272.2_ran         3.30e-02  21_[+3(1.87e-05)]_14
+ENSMUST00000132355.2_ran         1.11e-01  50
+ENSMUST00000147858.8_ran         3.12e-01  50
+ENSMUST00000147858.8_ran         2.68e-01  50
+ENSMUST00000147858.8_ran         2.34e-01  50
+ENSMUST00000123376.8_ran         9.49e-01  50
+ENSMUST00000123376.8_ran         1.94e-01  50
+ENSMUST00000123376.8_ran         4.26e-03  33_[+2(5.93e-06)]_2
+ENSMUST00000123376.8_ran         3.19e-03  14_[+1(7.73e-06)]_21
+ENSMUST00000123376.8_ran         1.19e-02  7_[+3(1.08e-05)]_28
+ENSMUST00000134831.2_ran         1.22e-01  50
+ENSMUST00000134831.2_ran         4.20e-01  50
+ENSMUST00000134831.2_ran         8.67e-01  50
+ENSMUST00000134831.2_ran         8.08e-01  50
+ENSMUST00000134831.2_ran         7.40e-01  50
+ENSMUST00000212876.2_ran         8.15e-02  50
+ENSMUST00000145764.2_ran         5.37e-01  50
+ENSMUST00000145764.2_ran         5.15e-01  50
+ENSMUST00000143221.2_ran         7.94e-02  50
+ENSMUST00000143221.2_ran         4.25e-01  50
+ENSMUST00000144554.2_ran         7.31e-01  50
+ENSMUST00000144554.2_ran         7.78e-01  50
+ENSMUST00000171081.8_ran         1.84e-03  2_[+1(6.88e-07)]_33
+ENSMUST00000171081.8_ran         7.57e-01  50
+ENSMUST00000171081.8_ran         7.16e-05  17_[+1(6.88e-07)]_18
+ENSMUST00000171081.8_ran         1.13e-01  25_[+5(9.08e-05)]_10
+ENSMUST00000132380.2_ran         3.18e-04  36_[+6(5.04e-06)]_4
+ENSMUST00000132380.2_ran         2.68e-02  4_[+4(9.19e-08)]_32
+ENSMUST00000132380.2_ran         5.14e-01  50
+ENSMUST00000132380.2_ran         2.03e-04  8_[+6(2.17e-05)]_11_[+10(4.40e-05)]_\
+    6
+ENSMUST00000132380.2_ran         3.05e-01  50
+ENSMUST00000176066.8_ran         6.53e-05  29_[+2(3.30e-08)]_6
+ENSMUST00000176066.8_ran         7.02e-03  34_[+10(2.90e-05)]_1
+ENSMUST00000176066.8_ran         8.62e-01  50
+ENSMUST00000176066.8_ran         2.85e-04  6_[+10(2.37e-05)]_14_[+3(2.84e-05)]
+ENSMUST00000176066.8_ran         5.36e-01  50
+ENSMUST00000126845.2_ran         5.37e-01  50
+ENSMUST00000127810.2_ran         3.16e-02  50
+ENSMUST00000127810.2_ran         3.59e-01  50
+ENSMUST00000127810.2_ran         1.84e-01  50
+ENSMUST00000127810.2_ran         1.75e-01  23_[+3(6.05e-05)]_12
+ENSMUST00000127810.2_ran         2.48e-02  25_[+10(4.17e-06)]_10
+ENSMUST00000242628.1_ran         9.99e-01  50
+ENSMUST00000242628.1_ran         9.30e-02  50
+ENSMUST00000242628.1_ran         6.12e-04  1_[+2(6.79e-09)]_34
+ENSMUST00000242628.1_ran         9.35e-01  50
+ENSMUST00000242628.1_ran         8.21e-01  50
+ENSMUST00000219906.2_ran         8.70e-01  50
+ENSMUST00000147997.2_ran         9.03e-02  50
+ENSMUST00000147997.2_ran         3.89e-03  [+2(3.47e-06)]_35
+ENSMUST00000147997.2_ran         1.26e-04  1_[+6(5.04e-06)]_39
+ENSMUST00000147997.2_ran         8.05e-02  50
+ENSMUST00000147997.2_ran         8.81e-01  50
+ENSMUST00000246013.1_ran         8.74e-01  50
+ENSMUST00000246013.1_ran         9.92e-04  [+8(6.29e-10)]_35
+ENSMUST00000246013.1_ran         1.16e-05  35_[+8(6.29e-10)]
+ENSMUST00000246013.1_ran         8.39e-05  14_[+2(6.79e-09)]_21
+ENSMUST00000246013.1_ran         4.23e-02  19_[+1(1.20e-05)]_16
+ENSMUST00000133194.2_ran         6.78e-01  50
+ENSMUST00000149529.8_ran         4.00e-01  50
+ENSMUST00000149529.8_ran         3.32e-02  [+1(4.12e-05)]_35
+ENSMUST00000149529.8_ran         1.47e-01  2_[+3(2.62e-05)]_33
+ENSMUST00000218764.2_ran         9.82e-01  50
+ENSMUST00000173378.8_ran         7.69e-03  50
+ENSMUST00000173378.8_ran         5.77e-04  27_[+3(3.34e-05)]_8
+ENSMUST00000173378.8_ran         4.51e-01  50
+ENSMUST00000143358.3_ran         3.74e-01  50
+ENSMUST00000150773.8_ran         1.89e-01  50
+ENSMUST00000150773.8_ran         2.10e-03  11_[+2(1.25e-06)]_24
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (10) found.
+********************************************************************************
+
+CPU: Jupiter
+
+********************************************************************************

@@ -1,6 +1,6 @@
 
 *.pth
-Data/FIMO/result_all_transcripts
+Data/FIMO/result_all_transcripts/*
 
 .ipynb_checkpoints/
 __pycache__/
