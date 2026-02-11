@@ -37,7 +37,7 @@ neural crest and SCP lineages across developmental stages (E8.5–E13.5).
 
 ## DOE
 1. The saturated probabilities were a bit of concern. Casting masks on padding regions in MHA layers and temprature scaling before activation were both tested
-to improve the accuracy. However we did not keep these fine-tuning  for strategiesinterpretability.
+to improve the accuracy. However we did not keep these fine-tuning strategies for interpretability.
 2. Due to a large data size, it was expected to be extremely slow to run the In-silico Mutagenesis. We extracted the attention matrix of each transcripts in
 the resolution of 32 bases. Those with a high entropy across the whole length and a high peak of attention score (statistical significant), as well as having
 both key and query of the peak inside the real sequence (biological significant) were retained. 
@@ -58,4 +58,6 @@ as in a range of 4-10, and longer as in 10-30.
 7. Buckets were compared agianst three databases in search of RBP, miR and other types of RNA. All species were included given evolutionary conservation. We
 discarded the motifs that are too common, or that have too low abundance. We also filtered out the matches that run in the reverse direction, or that could not
 pass at least two of three thresholds, where p-value was 5e-4, q-value was 0.1 and E-value was 0.05.
-     
+8. All the transcripts were compared aginst the motifs, and we ended up with more than 1.6 million hits. To deal with this huge data, we only kept the ones this q-value smaller than 0.5. Additionally, since both transcripts and motifs have their own clusters, we checked if they match, otherwise would be discarded.
+10. With that coarse transcript-motif data, we fisrt compressed the table by motif. Genes and transcripts were put aside. If a motif was found related to the same subcellular localization, we merged the rows (there was not single motif indicating two or more localizations). Fisher scores were calculated to see if a motif was strong enough. Later me made a little adjustment —— we merged the motifs on the same transcripts, to make the statistics more rational. The confidance was described by Phred scores. Finally we got a list of 89 motifs that might be related to SCL.
+11. We then temporarily ignored the motifs, only focusing on the genes and transcripts. If each transcript's localization pattern perfectly match, we thought that was not good and cut it out, as we were interested in splicing-related SCL modulation. Also we had merged the rows where same transcripts were in the same localizations, as well as having discarded _negative clusters for a clearer comparison. At lat we ended up with a csv file where 433 genes have a differentially distribution of localization on an isoform resolution.

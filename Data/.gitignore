@@ -1,8 +1,0 @@
-*.pth
-Data/FIMO/result_all_transcripts/*
-
-.ipynb_checkpoints/
-__pycache__/
-.DS_Store
-
-Trashbin/
