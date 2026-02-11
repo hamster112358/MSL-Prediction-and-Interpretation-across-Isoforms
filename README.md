@@ -16,15 +16,23 @@ differentiation of NCCs. Here, we utilize RNALocate v3.0, as it was trained on c
 neural crest and SCP lineages across developmental stages (E8.5–E13.5).
 
 ## Folders
-### Model/{Prediction, Interpretation}
-    Prediction: main python programs and the model
-    Interpretation: downstream analysis
-### Data/{ISM, MEME, MHA, MAIN, RAW, TOMTOM}
-    RAW: FASTS file of isoforms, aquired from Ensembl BioMart
-    MAIN: outputs of the model
+### Codes/{Prediction Interpretation}
+#### Prediction/{original model requirements Implementation}
+    original.py: specify the modules (non-editable)
+    model.pth: stores the weights (non-editable)
+    Implementation.py: encode the input; set the hyperparameter; fine-tune the architecture; run the model
+    
+#### Interpretation/{MHA ISM MEME FIMO}
+    MHA.ipynb: extract the attention and choose the candidates
+    ISM.ipynb: run the mutagenesis on each transcrip and put them into buckets
+    MEME.ipynb: elicit the motifs by MEME; align the motifs by TOMTOM
+    FIMO.ipynb: compare the raw sequences aginst the motifs
+### Data/{ISM MEME MHA MAIN RAW TOMTOM}
+    Raw: FASTS file of isoforms, gene-transcrip mapping
+    Main: predictions
     MHA: isoform candidates filtered
-    ISM: saliency maps and clusters
-    MEME: potential motifs in each buckets
+    ISM: saliency maps in clusters
+    MEME: potential motifs
     TOMTOM: good alignments filtered
 
 ## DOE
