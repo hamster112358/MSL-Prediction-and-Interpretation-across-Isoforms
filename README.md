@@ -1,19 +1,30 @@
-# Implmentation of RNALocate v3.0 predictor; Downstream interpretation combined with sc-transcriptomics
+# Deciphering Subcellular Localization via Alternative Splicing in Neural Crest Lineages
 
-## Tools
-    Anaconda
-    python 3.8.20
-    MEME Suite
+## Overview
+This repository contains the computational pipeline used to investigate the role of alternative splicing in modulating mRNA subcellular localization (SCL) during the developmental trajectories of mouse neural crest cells and Schwann cell precursors (E8.5–E13.5). The pipeline integrates deep learning-based SCL prediction (RNALocate v3.0) with custom interpretation, motif discovery, and single-cell RNA sequencing data to isolate the gene regulatory networks underlying cellular differenation.
 
-## Introduction
-Neural crest cells (NCCs) are pluripotent cells in early development often described as the “fourth germ layer” due to the plethora of cell types they give rise
-to. The developmental trajectories of neural crest lineages have been studied with single-cell RNA sequencing and genetic lineage tracing; however, the role of
-mRNA isoforms remains unknown despite pervasive alternative splicing during mammalian development. As is well-known that alternatively spliced mRNA may change
-post-transcriptional regulation, examples include subcellular localization (SCL) of mRNA, which is essential during development as it enables spatiotemporally
-restricted protein synthesis and establishes cellular polarity. There are several mechanisms of SCL, notably the non-coding sequence can act as a zip code
-specifying target location for the transcript by binding to transport proteins. Hence we ask whether alterative splicing regulates subcellular localization during
-differentiation of NCCs. Here, we utilize RNALocate v3.0, as it was trained on comprehensive databases, to predict the subcellular localization of mRNA from mouse
-neural crest and SCP lineages across developmental stages (E8.5–E13.5).
+## Environment
+The pipeline requires Python 3.8.20 and the MEME Suite. Environment management via Anaconda is strictly recommended.
+
+## Repository Structure
+├── Prediction/Implementation/
+│   ├── Implementation.py    # Main execution script (encoding, hyperparameters, inference)
+│   ├── original.py          # Network modules and architecture definitions
+│   └── model.pth            # Pre-trained RNALocate v3.0 weights
+├── Interpretation/
+│   ├── Full_Trans/          # Full-length transcript analysis
+│   │   ├── MHA.ipynb        # Multi-Head Attention extraction & candidate filtering
+│   │   ├── ISM.ipynb        # In-silico Mutagenesis & saliency map generation
+│   │   ├── MEME.ipynb       # De novo motif elicitation and database alignment
+│   │   └── FIMO.ipynb       # Sequence probability scanning
+│   └── 3_UTR/               # 3' Untranslated Region focused analysis
+│       ├── MEME_3UTR.ipynb  # UTR-specific motif elicitation
+│       ├── ME_FIMO_3UTR.ipynb # Motif-to-transcript mapping
+│       ├── ATTRACT_3UTR.ipynb # Databasz integration (ATtRACT + CISBP-RNA) and clustering
+│       └── FIMO_3UTR.ipynb  # RBP-to-transcript mapping
+│
+└── README.md
+
 
 ## Folders: Codes
 ### Prediction
