@@ -1,6 +1,5 @@
 Data/
 .ipynb_checkpoints/
-Codes/Prediction/model.pth
+Codes/Prediction/Implementation/model.pth
 Trashbin/
 _pycache_/
-Codes/Prediction/Validation
