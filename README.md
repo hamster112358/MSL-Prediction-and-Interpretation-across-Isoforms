@@ -44,12 +44,12 @@ The pipeline requires Python 3.8.20 and the MEME Suite. Environment management v
 1. **Class Binning:** The top 150 high-confidence sequences (probability > 0.5) per subcellular compartment were extracted. MEME was executed using a 0-order Markov background model to isolate compartment-specific motifs.
 2. **Custom Database Construction:** To overcome the limitations of the CISBP-RNA database, ATtRACT and CISBP-RNA datasets were merged. Highly redundant Position Weight Matrices (PWMs) were resolved via hierarchical clustering (Pearson correlation distance, threshold 0.25). Shorter matrices were slid against the cluster's consensus matrix to calculate minimum distance offsets prior to locking and averaging.
 3. **Dual-Gate Structural Filtering:** Query motifs were required to clear a MEME E-value < 0.05 and appear in >20% of input sequences. TOMTOM mapping enforced a q-value < 0.05. FIMO scanning across the complete 3' UTR repository (p < 1e-4) was aggregated using Fisher's combined probability test, keeping only highly significant transcript-level events (combined p < 1e-6). 
-4. **Single-Cell Transcriptomics Integration:** To eliminate low-expression artifacts, scRNA-seq matrices were pseudo-bulked by cell type to calculate Counts Per Million (CPM). Transcripts were required to pass an absolute floor of 15 CPM. Genes exhibiting high isoform usage similarity (transcript cosine similarity > 0.8) were discarded to guarantee genuine tissue-specific expression divergence.
+4. **Single-Cell Transcriptomics Integration:** To eliminate low-expression artifacts, scRNA-seq matrices were pseudo-bulked by cell type to calculate Counts Per Million (CPM). Transcripts were required to pass an absolute floor of 1 CPM. Genes exhibiting high isoform usage similarity (transcript cosine similarity > 0.8) were discarded to guarantee genuine tissue-specific expression divergence.
 5. **Macro-Compartment Mapping:** Related sub-compartments were collapsed into spatial macro-compartments (decoupling experiments dhad demonstrated high dependence; chromatin/nucleolus/nucleoplasm/nucleus into Nucleus; cytosol/cytoplasm into Cytoplasm). A final spatial filter discarded genes lacking divergent macro-compartment localization.
 6. **RBP-SCL Network Assignment:** Transcripts were clustered by gene via Agglomerative Clustering (cosine metric, K=2) on their RBP profiles. To link these structural rules to specific cell types, a strict four-gate logic was enforced:
-    * **Absolute Floor:** >15 CPM.
-    * **Relative Dominance:** >20% of total gene expression.
-    * **Housekeeping Silencer:** Pattern silenced if expressed (>15 CPM) in >12 of 16 cell types.
-    * **Specificity Fold-Change:** Expression required to be >1.2x the median of all other cell types.
+    * **Absolute Floor:** > 0.3 CPM.
+    * **Housekeeping Silencer:** Pattern silenced if expressed high in > 14 of 16 cell types.
+    * **Specificity Fold-Change:** Expression required to be > 1.8x the median of all other cell types.
+(Thresholds are all based on visaulizations)
 
 
