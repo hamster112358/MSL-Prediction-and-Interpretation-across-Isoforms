@@ -50,6 +50,7 @@ The pipeline requires Python 3.8.20 and the MEME Suite. Environment management v
     * **Absolute Floor:** > 0.3 CPM.
     * **Housekeeping Silencer:** Pattern silenced if expressed high in > 14 of 16 cell types.
     * **Specificity Fold-Change:** Expression required to be > 1.8x the median of all other cell types.
+
 (Thresholds are all based on visaulizations)
 
 
